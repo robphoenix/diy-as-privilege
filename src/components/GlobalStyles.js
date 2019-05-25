@@ -2,6 +2,7 @@ import React from "react"
 import { Global, css } from "@emotion/core"
 
 import { CocoGothic_BoldItalic } from "../assets/fonts"
+import { colours } from "../tokens"
 
 const GlobalStyles = () => {
   return (
@@ -27,6 +28,8 @@ const GlobalStyles = () => {
           box-sizing: inherit;
           margin: 0;
           padding: 0;
+          background-color: ${colours.background};
+          color: ${colours.text};
         }
       `}
     />
