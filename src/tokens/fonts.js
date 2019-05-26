@@ -12,7 +12,7 @@ const system = [
   `Segoe UI Symbol`,
   `Noto Color Emoji`,
 ]
-const header = [`CocoGothic`, ...system].join(`,`)
+const header = [`Coco Gothic`, ...system].join(`,`)
 const body = [`IBM Plex Sans`, ...system].join(`,`)
 
 export default { header, body }
