@@ -1,11 +1,4 @@
-import CocoGothic_BoldItalic_woff from "./CocoGothic-BoldItalic.woff"
-import CocoGothic_BoldItalic_ttf from "./CocoGothic-BoldItalic.ttf"
-import CocoGothic_BoldItalic_svg from "./CocoGothic-BoldItalic.svg"
-import CocoGothic_BoldItalic_eot from "./CocoGothic-BoldItalic.eot"
+import CocoGothic_BoldItalic_woff from "./cocogothic-bolditalic-webfont.woff"
+import CocoGothic_BoldItalic_woff2 from "./cocogothic-bolditalic-webfont.woff2"
 
-export {
-  CocoGothic_BoldItalic_woff,
-  CocoGothic_BoldItalic_ttf,
-  CocoGothic_BoldItalic_svg,
-  CocoGothic_BoldItalic_eot,
-}
+export { CocoGothic_BoldItalic_woff, CocoGothic_BoldItalic_woff2 }

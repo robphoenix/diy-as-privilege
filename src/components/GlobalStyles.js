@@ -3,9 +3,7 @@ import { Global, css } from "@emotion/core"
 
 import {
   CocoGothic_BoldItalic_woff,
-  CocoGothic_BoldItalic_ttf,
-  CocoGothic_BoldItalic_svg,
-  CocoGothic_BoldItalic_eot,
+  CocoGothic_BoldItalic_woff2,
 } from "../assets/fonts"
 import { colours } from "../tokens"
 
@@ -14,16 +12,11 @@ const GlobalStyles = () => {
     <Global
       styles={css`
         @font-face {
-          font-family: "CocoGothic";
-          src: url("${CocoGothic_BoldItalic_eot}");
-          src: url("${CocoGothic_BoldItalic_eot}?#iefix")
-              format("embedded-opentype"),
-            url("${CocoGothic_BoldItalic_woff}") format("woff"),
-            url("${CocoGothic_BoldItalic_ttf}") format("truetype"),
-            url("${CocoGothic_BoldItalic_svg}#webfontC6xdxB57") format("svg");
-          font-style: italic;
-          font-weight: bold;
-          text-rendering: optimizeLegibility;
+          font-family: "Coco Gothic";
+          src: url(${CocoGothic_BoldItalic_woff2}) format("woff2"),
+            url(${CocoGothic_BoldItalic_woff}) format("woff");
+          font-weight: normal;
+          font-style: normal;
         }
         html,
         body {
