@@ -3,7 +3,7 @@ import { css } from "@emotion/core"
 
 import { fonts, fontSizes, space } from "../tokens"
 
-const SubTitle = () => {
+const Subtitle = () => {
   return (
     <h2
       css={css`
@@ -19,4 +19,4 @@ const SubTitle = () => {
   )
 }
 
-export default SubTitle
+export default Subtitle
