@@ -25,6 +25,10 @@ const GlobalStyles = () => {
           box-sizing: border-box;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
+          -ms-text-size-adjust: none;
+          -moz-text-size-adjust: none;
+          -o-text-size-adjust: none;
+          -webkit-text-size-adjust: none;
         }
         *,
         *::before,
