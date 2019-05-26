@@ -20,8 +20,7 @@ const GlobalStyles = () => {
               format("embedded-opentype"),
             url(${CocoGothic_BoldItalic_woff}) format("woff"),
             url(${CocoGothic_BoldItalic_ttf}) format("truetype"),
-            url(${CocoGothic_BoldItalic_svg}#CocoGothic-BoldItalic)
-              format("svg");
+            url(${CocoGothic_BoldItalic_svg}#CocoGothicBoldItalic) format("svg");
           font-style: italic;
           font-weight: bold;
           text-rendering: optimizeLegibility;
