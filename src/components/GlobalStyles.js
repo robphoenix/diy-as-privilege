@@ -15,12 +15,12 @@ const GlobalStyles = () => {
       styles={css`
         @font-face {
           font-family: "CocoGothic";
-          src: url(${CocoGothic_BoldItalic_eot});
-          src: url(${CocoGothic_BoldItalic_eot}?#iefix)
+          src: url("${CocoGothic_BoldItalic_eot}");
+          src: url("${CocoGothic_BoldItalic_eot}?#iefix")
               format("embedded-opentype"),
-            url(${CocoGothic_BoldItalic_woff}) format("woff"),
-            url(${CocoGothic_BoldItalic_ttf}) format("truetype"),
-            url(${CocoGothic_BoldItalic_svg}#CocoGothicBoldItalic) format("svg");
+            url("${CocoGothic_BoldItalic_woff}") format("woff"),
+            url("${CocoGothic_BoldItalic_ttf}") format("truetype"),
+            url("${CocoGothic_BoldItalic_svg}#webfontC6xdxB57") format("svg");
           font-style: italic;
           font-weight: bold;
           text-rendering: optimizeLegibility;
