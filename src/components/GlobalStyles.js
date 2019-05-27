@@ -15,8 +15,9 @@ const GlobalStyles = () => {
           font-family: "Coco Gothic";
           src: url(${CocoGothic_BoldItalic_woff2}) format("woff2"),
             url(${CocoGothic_BoldItalic_woff}) format("woff");
-          font-weight: normal;
-          font-style: normal;
+          font-style: italic;
+          font-weight: bold;
+          text-rendering: optimizeLegibility;
         }
         html,
         body {
