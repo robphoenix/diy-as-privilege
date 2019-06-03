@@ -12,19 +12,23 @@ const Subtitle = () => {
         max-width: 12ch;
         padding: ${space[2]};
         text-align: center;
-        margin-top: ${space[6]};
+        margin-bottom: ${space[6]};
         ${mediaQueries.sm} {
           font-size: ${fontSizes[6]};
+          margin-bottom: ${space[8]};
         }
         ${mediaQueries.md} {
-          font-size: ${fontSizes[8]};
+          font-size: ${fontSizes[7]};
+          margin-bottom: ${space[9]};
           max-width: none;
         }
         ${mediaQueries.lg} {
-          font-size: ${fontSizes[9]};
+          font-size: ${fontSizes[8]};
+          margin-bottom: ${space[11]};
         }
         ${mediaQueries.xl} {
           font-size: ${fontSizes[11]};
+          margin-bottom: ${space[12]};
         }
       `}
     >

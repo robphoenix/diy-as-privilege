@@ -5,6 +5,7 @@ import GlobalStyles from "../components/GlobalStyles"
 import Title from "../components/Title"
 import Subtitle from "../components/Subtitle"
 import Points from "../components/Points"
+import { space, mediaQueries } from "../tokens"
 
 export default () => {
   return (
@@ -15,6 +16,10 @@ export default () => {
           display: flex;
           flex-direction: column;
           align-items: center;
+          padding: ${space[2]};
+          ${mediaQueries.md} {
+            padding: ${space[3]};
+          }
         `}
       >
         <Title />

@@ -2,22 +2,37 @@ import React from "react"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 
-import { fonts, space } from "../tokens"
+import { fonts, fontSizes, space, mediaQueries } from "../tokens"
 
 const Point = styled.li`
-  padding: ${space[2]};
+  padding: ${space[3]};
+  font-family: ${fonts.body};
+  font-size: ${fontSizes[2]};
+  max-width: 36ch;
+  ${mediaQueries.sm} {
+    font-size: ${fontSizes[3]};
+  }
+  ${mediaQueries.md} {
+    font-size: ${fontSizes[4]};
+    padding: ${space[4]};
+  }
+  ${mediaQueries.lg} {
+    font-size: ${fontSizes[5]};
+  }
+  ${mediaQueries.xl} {
+    font-size: ${fontSizes[6]};
+  }
 `
 
 const Points = () => {
   return (
     <ol
       css={css`
-        font-family: ${fonts.body};
         display: flex;
-        max-width: 28ch;
-        padding: ${space[2]};
+        padding: 0 ${space[4]};
         display: flex;
         flex-direction: column;
+        margin-left: ${space[5]};
       `}
     >
       <Point>
@@ -27,17 +42,15 @@ const Points = () => {
         <p>
           Disabilities can be visible and invisible. Physical barriers and lack
           of understanding can exclude people, think about how you can help
-          remove barriers.,
+          remove barriers.
         </p>
       </Point>
       <Point>
-        <p>
-          <blockquote>
-            “Using privilege to dismantle privilege, one of the best ways to use
-            your voice is to amplify voices that aren't being heard”
-          </blockquote>{" "}
-          - Rebecca Solnit
-        </p>
+        <blockquote>
+          “Using privilege to dismantle privilege, one of the best ways to use
+          your voice is to amplify voices that aren't being heard”
+        </blockquote>{" "}
+        <p>- Rebecca Solnit</p>
       </Point>
       <Point>
         <p>
@@ -52,10 +65,10 @@ const Points = () => {
         <p>Be a supportive tool, be patient, listen, give people control.</p>
       </Point>
       <Point>
+        <blockquote>
+          “They're catching me on my weak points but not on my strong points.”
+        </blockquote>
         <p>
-          <blockquote>
-            “They're catching me on my weak points but not on my strong points.”
-          </blockquote>
           - David M on Job Centre Plus.
           <br />
           Catch people's strong points.
