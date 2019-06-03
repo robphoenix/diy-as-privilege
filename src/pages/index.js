@@ -1,18 +1,26 @@
 import React from "react"
+import { css } from "@emotion/core"
 
 import GlobalStyles from "../components/GlobalStyles"
 import Title from "../components/Title"
 import Subtitle from "../components/Subtitle"
-import PencilLine from "../components/PencilLine"
+import Points from "../components/Points"
 
 export default () => {
   return (
     <React.Fragment>
       <GlobalStyles />
-      <Title />
-      <PencilLine />
-      <Subtitle />
-      <PencilLine />
+      <div
+        css={css`
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        `}
+      >
+        <Title />
+        <Subtitle />
+        <Points />
+      </div>
     </React.Fragment>
   )
 }
