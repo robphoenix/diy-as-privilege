@@ -1,6 +1,6 @@
 import React from "react"
 import { ThemeProvider } from "emotion-theming"
-import { Box } from "@rebass/emotion"
+import { Flex } from "@rebass/emotion"
 
 import GlobalStyles from "../components/GlobalStyles"
 import Title from "../components/Title"
@@ -14,17 +14,12 @@ export default () => {
     <React.Fragment>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <Box
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-          p={[2, 3, 4]}
-        >
+        <Flex flexDirection="column" alignItems="center" p={[2, 3, 4]}>
           <Title />
           <Subtitle />
           <Points />
           <About />
-        </Box>
+        </Flex>
       </ThemeProvider>
     </React.Fragment>
   )

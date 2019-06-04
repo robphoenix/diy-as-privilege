@@ -5,7 +5,7 @@ import Point from "./Point"
 
 const Points = () => {
   return (
-    <Box as="ol" px={4} width={["none", 2 / 3, 1 / 2]} mx="auto">
+    <Box as="ol" px={4} width={["none", 2 / 3, 1 / 2]} ml={3}>
       <Point>
         <Text as="p">See the privilege in being able to Do It Yourself.</Text>
       </Point>
