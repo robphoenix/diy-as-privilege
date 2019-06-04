@@ -5,14 +5,7 @@ import Point from "./Point"
 
 const Points = () => {
   return (
-    <Box
-      as="ol"
-      display="flex"
-      flexDirection="column"
-      px={[3, 4, 5]}
-      ml={[4, 5, 6]}
-      width={[1, 1, 2 / 3]}
-    >
+    <Box as="ol" px={4} width={["none", 2 / 3, 1 / 2]} mx="auto">
       <Point>
         <Text as="p">See the privilege in being able to Do It Yourself.</Text>
       </Point>
