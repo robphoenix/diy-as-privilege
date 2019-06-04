@@ -13,10 +13,12 @@ const GlobalStyles = () => {
       styles={css`
         @font-face {
           font-family: "Coco Gothic";
-          src: url(${CocoGothic_BoldItalic_woff2}) format("woff2"),
+          src: local("Coco Gothic"),
+            url(${CocoGothic_BoldItalic_woff2}) format("woff2");
+          src: local("Coco Gothic"),
             url(${CocoGothic_BoldItalic_woff}) format("woff");
-          font-style: italic;
-          font-weight: bold;
+          font-style: normal;
+          font-weight: normal;
           text-rendering: optimizeLegibility;
         }
         html,
