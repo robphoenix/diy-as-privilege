@@ -1,37 +1,18 @@
 import React from "react"
-import { css } from "@emotion/core"
-
-import { fonts, fontSizes, space, mediaQueries } from "../tokens"
+import { Heading } from "@rebass/emotion"
 
 const Title = () => {
   return (
-    <h1
-      css={css`
-        font-family: ${fonts.header};
-        font-size: ${fontSizes[6]};
-        padding: ${space[2]};
-        text-align: center;
-        margin: ${space[6]} 0;
-        ${mediaQueries.sm} {
-          font-size: ${fontSizes[7]};
-          margin: ${space[8]} 0;
-        }
-        ${mediaQueries.md} {
-          font-size: ${fontSizes[11]};
-          margin: ${space[9]} 0;
-        }
-        ${mediaQueries.lg} {
-          font-size: ${fontSizes[15]};
-          margin: ${space[11]} 0;
-        }
-        ${mediaQueries.xl} {
-          font-size: ${fontSizes[17]};
-          margin: ${space[12]} 0;
-        }
-      `}
+    <Heading
+      as="h1"
+      fontFamily="header"
+      fontSize={[5, 8, 11]}
+      marginTop={[4, 5, 6]}
+      marginBottom={[4, 5, 6]}
+      textAlign="center"
     >
       D.I.Y. as Privilege
-    </h1>
+    </Heading>
   )
 }
 

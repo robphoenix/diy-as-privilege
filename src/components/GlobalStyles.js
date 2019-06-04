@@ -32,6 +32,7 @@ const GlobalStyles = () => {
           -moz-text-size-adjust: none;
           -o-text-size-adjust: none;
           -webkit-text-size-adjust: none;
+          -webkit-overflow-scrolling: touch;
         }
         *,
         *::before,
