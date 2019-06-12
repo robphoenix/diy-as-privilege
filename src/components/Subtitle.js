@@ -1,5 +1,5 @@
 import React from "react"
-import { Heading } from "@rebass/emotion"
+import { Heading } from "rebass"
 
 const Subtitle = () => {
   return (
@@ -7,7 +7,7 @@ const Subtitle = () => {
       as="h2"
       fontFamily="header"
       fontSize={[4, 6, 8]}
-      marginBottom={[5, 6, 7]}
+      marginBottom={[4, 5, 6]}
       textAlign="center"
     >
       13 Point Manifesto for Musicians

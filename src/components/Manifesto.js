@@ -1,15 +1,46 @@
 import React from "react"
-import { Box, Text } from "@rebass/emotion"
+import { Box, Text } from "rebass"
 
 import Point from "./Point"
+import SectionHeading from "./SectionHeading"
 
-const Points = () => {
+const Number = props => <Text {...props} fontFamily="header" mb={2} pb={1} />
+
+const Quote = props => (
+  <Text
+    {...props}
+    as="blockquote"
+    mb={3}
+    css={{
+      fontStyle: "italic",
+    }}
+  />
+)
+
+const Italic = props => (
+  <Text {...props} as="span" css={{ fontStyle: "italic" }} />
+)
+
+const RightAlign = props => <Text {...props} as="p" textAlign="right" />
+
+const Manifesto = () => {
   return (
-    <Box as="ol" px={4} width={["none", 2 / 3, 1 / 2]} ml={3}>
+    <Box
+      as="ol"
+      px={4}
+      pb={4}
+      width={["none", 2 / 3, 1 / 2]}
+      css={{
+        listStyle: "none",
+      }}
+    >
+      <SectionHeading id="manifesto">The Manifesto</SectionHeading>
       <Point>
+        <Number>1.</Number>
         <Text as="p">See the privilege in being able to Do It Yourself.</Text>
       </Point>
       <Point>
+        <Number>2.</Number>
         <Text as="p">
           Disabilities can be visible and invisible. Physical barriers and lack
           of understanding can exclude people, think about how you can help
@@ -17,21 +48,15 @@ const Points = () => {
         </Text>
       </Point>
       <Point>
-        <Text
-          as="blockquote"
-          mb={3}
-          css={{
-            fontStyle: "italic",
-          }}
-        >
+        <Number>3.</Number>
+        <Quote>
           “Using privilege to dismantle privilege, one of the best ways to use
           your voice is to amplify voices that aren't being heard”
-        </Text>{" "}
-        <Text as="p" textAlign="right">
-          &mdash; Rebecca Solnit
-        </Text>
+        </Quote>
+        <RightAlign>&mdash; Rebecca Solnit</RightAlign>
       </Point>
       <Point>
+        <Number>4.</Number>
         <Text as="p">
           Do It Yourself can mean different things to different people and is a
           misleading term &mdash; it can mean you still work with people that
@@ -42,48 +67,41 @@ const Points = () => {
         </Text>
       </Point>
       <Point>
+        <Number>5.</Number>
         <Text as="p">
           Be a supportive tool, be patient, listen, give people control.
         </Text>
       </Point>
       <Point>
-        <Text
-          as="blockquote"
-          mb={3}
-          css={{
-            fontStyle: "italic",
-          }}
-        >
+        <Number>6.</Number>
+        <Quote>
           “They're catching me on my weak points but not on my strong points.”
-        </Text>
-        <Text as="p" textAlign="right" mb={4}>
-          &mdash; David M on Job Centre Plus
-        </Text>
+        </Quote>
+        <RightAlign>&mdash; David M on Job Centre Plus</RightAlign>
+        <br />
         <Text as="p">Catch people's strong points.</Text>
       </Point>
       <Point>
+        <Number>7.</Number>
         <Text as="p">Don't assume what's accessible; ask and learn.</Text>
       </Point>
       <Point>
+        <Number>8.</Number>
         <Text as="p">
           People with disabilities performing at or attending gigs shouldn't be
-          exceptional; the more it happens the more{" "}
-          <Text as="span" css={{ fontStyle: "italic" }}>
-            ‘normal’
-          </Text>{" "}
-          it becomes. Make it the norm.
+          exceptional; the more it happens the more <Italic>‘normal’</Italic> it
+          becomes. Make it the norm.
         </Text>
       </Point>
       <Point>
+        <Number>9.</Number>
         <Text as="p">
-          There is an audience for everything and ideas of what is{" "}
-          <Text as="span" css={{ fontStyle: "italic" }}>
-            ‘good music’
-          </Text>{" "}
-          will always be political.
+          There is an audience for everything and ideas of what is
+          <Italic> ‘good music’ </Italic>will always be political.
         </Text>
       </Point>
       <Point>
+        <Number>10.</Number>
         <Text as="p">
           Everyone, regardless of ability, can contribute to a music scene. Use
           existing support networks to get people on stage and in the audience
@@ -91,17 +109,20 @@ const Points = () => {
         </Text>
       </Point>
       <Point>
+        <Number>11.</Number>
         <Text as="p">
           Turn up and keep turning up. Sometimes when supporting people being
           consistent is more impressive than being spectacular.
         </Text>
       </Point>
       <Point>
+        <Number>12.</Number>
         <Text as="p">
           The more invisible you make yourself, the more visible others will be.
         </Text>
       </Point>
       <Point>
+        <Number>13.</Number>
         <Text as="p">
           People with disabilities have senses of humour, laugh with people and
           enjoy yourself.
@@ -111,4 +132,4 @@ const Points = () => {
   )
 }
 
-export default Points
+export default Manifesto

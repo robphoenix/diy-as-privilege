@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { css } from "@emotion/core"
 
 const query = graphql`
   query {
@@ -17,15 +16,7 @@ const query = graphql`
 
 const PencilLine = () => {
   const { pencilLine } = useStaticQuery(query)
-  return (
-    <div
-      css={css`
-        width: 600px;
-      `}
-    >
-      <Img fluid={pencilLine.childImageSharp.fluid} title="pencil line" />
-    </div>
-  )
+  return <Img fluid={pencilLine.childImageSharp.fluid} />
 }
 
 export default PencilLine

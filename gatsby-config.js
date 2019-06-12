@@ -9,7 +9,7 @@ module.exports = {
         path: path.join(__dirname, `src`, `assets`, `images`),
       },
     },
-    `gatsby-plugin-emotion`,
+    `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],

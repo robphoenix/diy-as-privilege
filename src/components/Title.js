@@ -1,5 +1,5 @@
 import React from "react"
-import { Heading } from "@rebass/emotion"
+import { Heading } from "rebass"
 
 const Title = () => {
   return (
@@ -7,7 +7,6 @@ const Title = () => {
       as="h1"
       fontFamily="header"
       fontSize={[5, 8, 11]}
-      marginTop={[4, 5, 6]}
       marginBottom={[4, 5, 6]}
       textAlign="center"
     >
