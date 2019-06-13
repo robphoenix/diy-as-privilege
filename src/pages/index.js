@@ -22,10 +22,10 @@ export default () => {
           flexDirection="column"
           alignItems="center"
           p={[2, 3, 4]}
-          mt={5}
+          mt={[5, 6]}
           mb={[6, 2]}
         >
-          <Flex flexDirection="column" alignItems="center" mb={5}>
+          <Flex flexDirection="column" alignItems="center" mb={[5, 7]}>
             <Title />
             <Subtitle />
           </Flex>
