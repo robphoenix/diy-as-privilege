@@ -1,19 +1,17 @@
 import React from "react"
 import { Flex, Text } from "rebass"
 import SectionHeading from "./SectionHeading"
+import SectionWrapper from "./SectionWrapper"
 
-const Artist = props => <Text {...props} as="li" />
+const Artist = props => (
+  <Text {...props} as="li" fontFamily="body" fontSize={1} />
+)
 
 const Why = () => {
   return (
-    <Flex
-      width={["none", 2 / 3, 1 / 2]}
-      px={4}
-      flexDirection="column"
-      mb={[5, 6, 7]}
-    >
+    <SectionWrapper>
       <SectionHeading>Why I wrote the Manifesto</SectionHeading>
-      <Text as="p" fontFamily="body" fontSize={[1, 2, 3]}>
+      <Text as="p" fontFamily="body" fontSize={2}>
         On the 4th December 2006 I saw the bands Beat Express and Heavy Load
         play in Brighton. It was the first time I had seen musicians with
         learning disabilities on stage performing and it was one of the best
@@ -38,64 +36,64 @@ const Why = () => {
         longer and longer!
         <br />
         <br />
-        <Flex as="ul" css={{ listStyle: "none" }} flexDirection="column">
-          <Artist>2Decks</Artist>
-          <Artist />
-          <Artist>Beat Express</Artist>
-          <Artist>Berhana</Artist>
-          <Artist>Bubbaloo</Artist>
-          <Artist>Catherine O’Rourke</Artist>
-          <Artist>Cossima</Artist>
-          <Artist>Dancing Rock Queens</Artist>
-          <Artist>Daniel Wakeford</Artist>
-          <Artist>Dedji</Artist>
-          <Artist>Delta 7</Artist>
-          <Artist>Diamond Glaze</Artist>
-          <Artist>DJ Ivon</Artist>
-          <Artist>DJ Skrapz</Artist>
-          <Artist>Do Your Own Thing Band</Artist>
-          <Artist>Electric Fire</Artist>
-          <Artist>Flash Rockers</Artist>
-          <Artist>Fuzzbomb Band</Artist>
-          <Artist>Fuzzbomb Flash Band</Artist>
-          <Artist>Heavy Load</Artist>
-          <Artist>Hit Party Crashers</Artist>
-          <Artist>Jade</Artist>
-          <Artist>Jolene Wild</Artist>
-          <Artist>K-Dog</Artist>
-          <Artist>Lizzie Emeh</Artist>
-          <Artist>Louis Walkden</Artist>
-          <Artist>Luc Eisenbarth</Artist>
-          <Artist>Ludo</Artist>
-          <Artist>Minotor</Artist>
-          <Artist>Pertti Kurikan Nimipäivät</Artist>
-          <Artist>Radical Racoons</Artist>
-          <Artist>Richard Rock n Roll</Artist>
-          <Artist>Richard Watson</Artist>
-          <Artist>Robyn Steward</Artist>
-          <Artist>Rock House Band</Artist>
-          <Artist>Rock House Rap Gang</Artist>
-          <Artist>Rock Penguins</Artist>
-          <Artist>Ryan O’Donovan</Artist>
-          <Artist>Sabien Gator</Artist>
-          <Artist>Sam Castell-Ward</Artist>
-          <Artist>Seany Seany</Artist>
-          <Artist>Sensatronic Lab</Artist>
-          <Artist>Teddy Boys</Artist>
-          <Artist>Teddy Wynettes</Artist>
-          <Artist>The Carbonators</Artist>
-          <Artist>The Coasters</Artist>
-          <Artist>The Daniel Wakeford Experience</Artist>
-          <Artist>The Fish Police</Artist>
-          <Artist>The Revs</Artist>
-          <Artist>The Stars Band</Artist>
-          <Artist>Too Hot For Candy</Artist>
-          <Artist>Ultimate Thunder</Artist>
-          <Artist>We Rise From The Fallen</Artist>
-          <Artist>Zombie Crash</Artist>
-        </Flex>
       </Text>
-    </Flex>
+      <Flex as="ul" css={{ listStyle: "none" }} flexDirection="column">
+        <Artist>2Decks</Artist>
+        <Artist />
+        <Artist>Beat Express</Artist>
+        <Artist>Berhana</Artist>
+        <Artist>Bubbaloo</Artist>
+        <Artist>Catherine O’Rourke</Artist>
+        <Artist>Cossima</Artist>
+        <Artist>Dancing Rock Queens</Artist>
+        <Artist>Daniel Wakeford</Artist>
+        <Artist>Dedji</Artist>
+        <Artist>Delta 7</Artist>
+        <Artist>Diamond Glaze</Artist>
+        <Artist>DJ Ivon</Artist>
+        <Artist>DJ Skrapz</Artist>
+        <Artist>Do Your Own Thing Band</Artist>
+        <Artist>Electric Fire</Artist>
+        <Artist>Flash Rockers</Artist>
+        <Artist>Fuzzbomb Band</Artist>
+        <Artist>Fuzzbomb Flash Band</Artist>
+        <Artist>Heavy Load</Artist>
+        <Artist>Hit Party Crashers</Artist>
+        <Artist>Jade</Artist>
+        <Artist>Jolene Wild</Artist>
+        <Artist>K-Dog</Artist>
+        <Artist>Lizzie Emeh</Artist>
+        <Artist>Louis Walkden</Artist>
+        <Artist>Luc Eisenbarth</Artist>
+        <Artist>Ludo</Artist>
+        <Artist>Minotor</Artist>
+        <Artist>Pertti Kurikan Nimipäivät</Artist>
+        <Artist>Radical Racoons</Artist>
+        <Artist>Richard Rock n Roll</Artist>
+        <Artist>Richard Watson</Artist>
+        <Artist>Robyn Steward</Artist>
+        <Artist>Rock House Band</Artist>
+        <Artist>Rock House Rap Gang</Artist>
+        <Artist>Rock Penguins</Artist>
+        <Artist>Ryan O’Donovan</Artist>
+        <Artist>Sabien Gator</Artist>
+        <Artist>Sam Castell-Ward</Artist>
+        <Artist>Seany Seany</Artist>
+        <Artist>Sensatronic Lab</Artist>
+        <Artist>Teddy Boys</Artist>
+        <Artist>Teddy Wynettes</Artist>
+        <Artist>The Carbonators</Artist>
+        <Artist>The Coasters</Artist>
+        <Artist>The Daniel Wakeford Experience</Artist>
+        <Artist>The Fish Police</Artist>
+        <Artist>The Revs</Artist>
+        <Artist>The Stars Band</Artist>
+        <Artist>Too Hot For Candy</Artist>
+        <Artist>Ultimate Thunder</Artist>
+        <Artist>We Rise From The Fallen</Artist>
+        <Artist>Zombie Crash</Artist>
+      </Flex>
+    </SectionWrapper>
   )
 }
 

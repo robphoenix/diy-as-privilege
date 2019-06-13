@@ -7,7 +7,6 @@ import Subtitle from "../components/Subtitle"
 import Manifesto from "../components/Manifesto"
 import theme from "../theme"
 import About from "../components/About"
-import PencilLine from "../components/PencilLine"
 import GlobalStyle from "../components/GlobalStyle"
 import Why from "../components/Why"
 import MobileNav from "../components/MobileNav"
@@ -23,16 +22,20 @@ export default () => {
           flexDirection="column"
           alignItems="center"
           p={[2, 3, 4]}
-          marginTop={[4, 5, 6]}
+          mt={5}
+          mb={[6, 2]}
         >
-          <Title />
-          <Subtitle />
-          <PencilLine />
+          <Flex flexDirection="column" alignItems="center" mb={5}>
+            <Title />
+            <Subtitle />
+          </Flex>
+
           <Manifesto />
           <About />
           <Why />
-          <MobileNav />
         </Flex>
+
+        <MobileNav />
       </React.Fragment>
     </ThemeProvider>
   )

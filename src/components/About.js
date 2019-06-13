@@ -1,17 +1,13 @@
 import React from "react"
 import { Flex, Text } from "rebass"
 import SectionHeading from "./SectionHeading"
+import SectionWrapper from "./SectionWrapper"
 
 const About = () => {
   return (
-    <Flex
-      width={["none", 2 / 3, 1 / 2]}
-      px={4}
-      flexDirection="column"
-      mb={[4, 5, 6]}
-    >
+    <SectionWrapper>
       <SectionHeading id="about">About</SectionHeading>
-      <Text as="p" fontFamily="body" fontSize={[1, 2, 3]}>
+      <Text as="p" fontFamily="body" fontSize={2}>
         The manifesto was written by Richard Phoenix, who has spent over ten
         years dedicated to using his ability, privilege and experience to open
         up the D.I.Y. ethos to musicians with learning disabilities.
@@ -33,7 +29,7 @@ const About = () => {
         people’ rather than ‘People with Disabilities’. This is so the language
         in the text better reflects the social model of disability.
       </Text>
-    </Flex>
+    </SectionWrapper>
   )
 }
 

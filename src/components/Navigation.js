@@ -1,10 +1,31 @@
 import React from "react"
-import { Flex, Text } from "rebass"
+import { Flex, Box } from "rebass"
 import styled from "styled-components"
-import { display, width } from "styled-system"
-import { css } from "@styled-system/css"
+import { display, width, zIndex, position, top, right } from "styled-system"
+import { themeGet } from "@styled-system/theme-get"
+import { navigate } from "@reach/router"
 
-const Nav = styled(Flex)(display, width)
+import PageLink from "./PageLink"
+
+const Nav = styled(Flex)(display, width, zIndex, position, top, right)
+
+const LinkWrapper = props => <Box {...props} as="li" />
+
+const DesktopLink = styled(PageLink)(props => ({
+  backgroundImage: `linear-gradient(180deg, ${themeGet("colors.text")(
+    props
+  )}, ${themeGet("colors.text")(props)})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center bottom",
+  backgroundSize: "70% 8%",
+  transition: "all 0.2s ease-in-out",
+  borderRadius: 0,
+  cursor: "pointer",
+  ":hover": {
+    color: themeGet("colors.background")(props),
+    backgroundSize: "100% 100%",
+  },
+}))
 
 const Navigation = () => {
   return (
@@ -13,58 +34,30 @@ const Navigation = () => {
       role="navigation"
       display={["none", "flex"]}
       justifyContent="flex-end"
+      position="fixed"
+      top="0"
+      right="0"
+      zIndex="2"
+      width={1}
+      p={3}
     >
       <Flex
         as="ul"
-        alignItems="flex-end"
-        mt={5}
-        mr={5}
         css={{
           listStyle: "none",
         }}
       >
-        <a
-          href="#"
-          css={css({
-            color: `text`,
-            textDecoration: `none`,
-            borderBottom: `3px solid`,
-            borderColor: `bg`,
-            marginBottom: 3,
-          })}
-        >
-          <Text as="li" fontFamily="header" fontSize={3}>
-            Home
-          </Text>
-        </a>
-        <a
-          href="#manifesto"
-          css={css({
-            color: `text`,
-            textDecoration: `none`,
-            borderBottom: `3px solid`,
-            borderColor: `bg`,
-            marginBottom: 3,
-          })}
-        >
-          <Text as="li" fontFamily="header" fontSize={3}>
+        <LinkWrapper>
+          <DesktopLink onClick={() => navigate(`#`)}>Home</DesktopLink>
+        </LinkWrapper>
+        <LinkWrapper>
+          <DesktopLink onClick={() => navigate(`#manifesto`)} mx={2}>
             Manifesto
-          </Text>
-        </a>
-        <a
-          href="#about"
-          css={css({
-            color: `text`,
-            textDecoration: `none`,
-            borderBottom: `3px solid`,
-            borderColor: `bg`,
-            marginBottom: 3,
-          })}
-        >
-          <Text as="li" fontFamily="header" fontSize={3}>
-            About
-          </Text>
-        </a>
+          </DesktopLink>
+        </LinkWrapper>
+        <LinkWrapper>
+          <DesktopLink onClick={() => navigate(`#about`)}>About</DesktopLink>
+        </LinkWrapper>
       </Flex>
     </Nav>
   )

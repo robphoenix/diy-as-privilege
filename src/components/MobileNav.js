@@ -13,6 +13,9 @@ import {
 } from "styled-system"
 import styled from "styled-components"
 
+import PageLink from "./PageLink"
+import { navigate } from "@reach/router"
+
 const Nav = styled(Flex)(
   display,
   width,
@@ -25,16 +28,8 @@ const Nav = styled(Flex)(
   borderColor
 )
 
-const LinkWrapper = props => (
-  <Text
-    {...props}
-    as="li"
-    fontFamily="header"
-    fontSize={3}
-    mx={[2, 3]}
-    color="text"
-  />
-)
+const LinkWrapper = props => <Text {...props} as="li" />
+const MobileLink = props => <PageLink fontSize={3} {...props} />
 
 const MobileNav = () => {
   return (
@@ -45,7 +40,7 @@ const MobileNav = () => {
       display={["flex", "none"]}
       alignItems="center"
       py={[3, 4, 5]}
-      zIndex="2"
+      zIndex="9"
       bottom="0"
       left="0"
       right="0"
@@ -62,35 +57,15 @@ const MobileNav = () => {
         }}
       >
         <LinkWrapper>
-          <a
-            // eslint-disable-next-line
-            href="#"
-            css={{
-              textDecoration: "none",
-            }}
-          >
-            Home
-          </a>
+          <MobileLink onClick={() => navigate("#")}>Home</MobileLink>
         </LinkWrapper>
         <LinkWrapper>
-          <a
-            href="#manifesto"
-            css={{
-              textDecoration: "none",
-            }}
-          >
+          <MobileLink onClick={() => navigate("#manifesto")}>
             Manifesto
-          </a>
+          </MobileLink>
         </LinkWrapper>
         <LinkWrapper>
-          <a
-            href="#about"
-            css={{
-              textDecoration: "none",
-            }}
-          >
-            About
-          </a>
+          <MobileLink onClick={() => navigate("#about")}>About</MobileLink>
         </LinkWrapper>
       </Flex>
     </Nav>

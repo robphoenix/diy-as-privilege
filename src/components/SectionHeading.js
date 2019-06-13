@@ -9,7 +9,7 @@ const SectionHeading = ({ id, children }) => {
       fontFamily="header"
       fontSize={[2, 3, 4]}
       pt={4}
-      mb={[4, 5, 6]}
+      mb={[4, 5]}
       textAlign="center"
     >
       {children}
