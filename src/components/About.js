@@ -1,5 +1,5 @@
 import React from "react"
-import { Flex, Text } from "rebass"
+import { Text } from "rebass"
 import SectionHeading from "./SectionHeading"
 import SectionWrapper from "./SectionWrapper"
 

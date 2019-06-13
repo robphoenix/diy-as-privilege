@@ -25,7 +25,7 @@ export default () => {
           mt={[5, 6]}
           mb={[6, 2]}
         >
-          <Flex flexDirection="column" alignItems="center" mb={[5, 7]}>
+          <Flex flexDirection="column" alignItems="center" mb={[6, 7]}>
             <Title />
             <Subtitle />
           </Flex>

@@ -1,7 +1,5 @@
 import React from "react"
 import { Box, Text } from "rebass"
-import styled from "styled-components"
-import { zIndex } from "styled-system"
 
 import Point from "./Point"
 import SectionHeading from "./SectionHeading"
