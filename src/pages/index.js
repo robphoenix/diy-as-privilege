@@ -11,6 +11,7 @@ import GlobalStyle from "../components/GlobalStyle"
 import Why from "../components/Why"
 import MobileNav from "../components/MobileNav"
 import Navigation from "../components/Navigation"
+import Artists from "../components/Artists"
 
 export default () => {
   return (
@@ -23,7 +24,7 @@ export default () => {
           alignItems="center"
           p={[2, 3, 4]}
           mt={[5, 6]}
-          mb={[6, 2]}
+          mb={[6, 5, 2]}
         >
           <Flex flexDirection="column" alignItems="center" mb={[6, 7]}>
             <Title />
@@ -33,6 +34,7 @@ export default () => {
           <Manifesto />
           <About />
           <Why />
+          <Artists />
         </Flex>
 
         <MobileNav />
