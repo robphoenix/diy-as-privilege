@@ -27,12 +27,14 @@ const DesktopLink = styled(PageLink)(props => ({
   },
 }))
 
+const mediaQuery = `@media (min-width: 1025px)`
+
 const Navigation = () => {
   return (
     <Nav
       as="nav"
       role="navigation"
-      display={["none", "none", "flex"]}
+      display="none"
       justifyContent="flex-end"
       position="fixed"
       top="0"
@@ -40,6 +42,9 @@ const Navigation = () => {
       zIndex="2"
       width={1}
       p={3}
+      css={{
+        [mediaQuery]: { display: `flex` },
+      }}
     >
       <Flex
         as="ul"

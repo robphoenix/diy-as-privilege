@@ -16,6 +16,8 @@ import styled from "styled-components"
 import PageLink from "./PageLink"
 import { navigate } from "@reach/router"
 
+const mediaQuery = `@media (min-width: 1025px)`
+
 const Nav = styled(Flex)(
   display,
   width,
@@ -37,9 +39,9 @@ const MobileNav = () => {
       as="nav"
       role="navigation"
       width={1}
-      display={["flex", "flex", "none"]}
+      display="flex"
       alignItems="center"
-      py={3}
+      py={2}
       zIndex="9"
       bottom="0"
       left="0"
@@ -47,6 +49,9 @@ const MobileNav = () => {
       position="fixed"
       borderTop="2px solid"
       borderColor="text"
+      css={{
+        [mediaQuery]: { display: `none` },
+      }}
     >
       <Flex
         as="ul"
