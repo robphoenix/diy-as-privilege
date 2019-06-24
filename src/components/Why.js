@@ -1,13 +1,14 @@
 import React from "react"
-import { Text } from "rebass"
+
 import SectionHeading from "./SectionHeading"
 import SectionWrapper from "./SectionWrapper"
+import BodyText from "./BodyText"
 
 const Why = () => {
   return (
     <SectionWrapper>
       <SectionHeading id="why">Why I wrote the Manifesto</SectionHeading>
-      <Text as="p" fontFamily="body" fontSize={2}>
+      <BodyText>
         On the 4th December 2006 I saw the bands Beat Express and Heavy Load
         play in Brighton. It was the first time I had seen musicians with
         learning disabilities on stage performing and it was one of the best
@@ -32,7 +33,7 @@ const Why = () => {
         longer and longer!
         <br />
         <br />
-      </Text>
+      </BodyText>
     </SectionWrapper>
   )
 }

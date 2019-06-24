@@ -1,7 +1,8 @@
 import React from "react"
-import { Flex, Text } from "rebass"
+import { Flex } from "rebass"
 import SectionWrapper from "./SectionWrapper"
 import SectionHeading from "./SectionHeading"
+import BodyText from "./BodyText"
 
 const artists = [
   { name: "2Decks" },
@@ -59,9 +60,7 @@ const artists = [
   { name: "Zombie Crash" },
 ]
 
-const Artist = props => (
-  <Text {...props} as="li" fontFamily="body" fontSize={1} />
-)
+const Artist = props => <BodyText {...props} as="li" />
 
 const Artists = () => {
   return (
