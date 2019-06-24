@@ -32,7 +32,7 @@ const Navigation = () => {
     <Nav
       as="nav"
       role="navigation"
-      display={["none", "flex"]}
+      display={["none", "none", "flex"]}
       justifyContent="flex-end"
       position="fixed"
       top="0"

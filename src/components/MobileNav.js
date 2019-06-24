@@ -37,9 +37,9 @@ const MobileNav = () => {
       as="nav"
       role="navigation"
       width={1}
-      display={["flex", "none"]}
+      display={["flex", "flex", "none"]}
       alignItems="center"
-      py={[3, 4, 5]}
+      py={3}
       zIndex="9"
       bottom="0"
       left="0"
