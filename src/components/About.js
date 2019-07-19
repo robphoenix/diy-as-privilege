@@ -60,27 +60,21 @@ const About = () => {
       </Box>
 
       <BodyText>
-        This was written by Richard Phoenix, who has spent over ten years
+        This was written by Richard Phoenix [link: richardphoenix.com] , who has spent many years
         dedicated to using his ability, privilege and experience to open up the
         D.I.Y. ethos to musicians with learning disabilities.
-        <br />
-        <br />
-        He has supported the creation of a music scene in Brighton around the
-        long running Rock House night; organised three UK tours for bands with
-        members with learning disabilities; supported DIY Space For London to be
-        the first volunteer run venue in the UK to achieve Bronze accreditation
-        for access; and worked as a music facilitator supporting people with
-        learning disabilities to form bands, create music, record and perform,
-        as well as organising countless other gigs, releases, events and
-        projects. He has found that these scenes are the most wildly creative,
-        egoless, positive, full of the most amazing music, fun and the best he’s
-        ever been a part of.
         <br />
         <br />
         This is the second version of the manifesto, it uses the words{" "}
         <Italic>‘Disabled people’</Italic> rather than{" "}
         <Italic>‘People with Disabilities’</Italic>. This is so the language in
         the text better reflects the social model of disability.
+      </BodyText>
+    
+    <BodyText>
+       <b>Download PDF [link: https://www.dropbox.com/s/e4eisnar6bndmbd/2019-DIY-as-Privilege.pdf?dl=0]
+       Buy a copy [link: https://richardjphoenix.bigcartel.com/product/diy-as-privilege]</b>
+
       </BodyText>
     </SectionWrapper>
   )
