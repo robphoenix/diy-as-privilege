@@ -122,7 +122,7 @@ const Manifesto = () => {
         <Point>
           <Number>13.</Number>
           <Text as="p">
-            People with disabilities have senses of humour, laugh with people
+            Disabled people have senses of humour, laugh with people
             and enjoy yourself.
           </Text>
         </Point>
