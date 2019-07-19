@@ -65,6 +65,12 @@ const About = () => {
         <Italic>‘People with Disabilities’</Italic>. This is so the language in
         the text better reflects the social model of disability.
       </BodyText>
+    
+    <BodyText>
+       <b>Download PDF [link: https://www.dropbox.com/s/e4eisnar6bndmbd/2019-DIY-as-Privilege.pdf?dl=0]
+       Buy a copy [link: https://richardjphoenix.bigcartel.com/product/diy-as-privilege]</b>
+
+      </BodyText>
     </SectionWrapper>
   )
 }
