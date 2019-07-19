@@ -84,7 +84,7 @@ const Manifesto = () => {
         <Point>
           <Number>8.</Number>
           <Text as="p">
-            People with disabilities performing at or attending gigs shouldn't
+            Disabled people performing at or attending gigs shouldn't
             be exceptional; the more it happens the more{" "}
             <Italic>‘normal’</Italic> it becomes. Make it the norm.
           </Text>
