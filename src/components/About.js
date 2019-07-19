@@ -60,11 +60,6 @@ const About = () => {
       </Box>
 
       <BodyText>
-        This was written by Richard Phoenix [link: richardphoenix.com] , who has spent many years
-        dedicated to using his ability, privilege and experience to open up the
-        D.I.Y. ethos to musicians with learning disabilities.
-        <br />
-        <br />
         This is the second version of the manifesto, it uses the words{" "}
         <Italic>‘Disabled people’</Italic> rather than{" "}
         <Italic>‘People with Disabilities’</Italic>. This is so the language in
