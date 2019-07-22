@@ -14,6 +14,7 @@ const StyledLink = styled(Link)(props => ({
   transition: "all 0.2s ease-in-out",
   cursor: "pointer",
   color: themeGet("colors.text")(props),
+  fontFamily: themeGet("fonts.body")(props),
   lineHeight: "1.5rem",
   ":hover": {
     color: themeGet("colors.background")(props),

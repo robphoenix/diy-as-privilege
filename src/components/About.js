@@ -1,11 +1,12 @@
 import React from "react"
-import { Text, Heading, Box } from "rebass"
+import { Heading, Box } from "rebass"
 
 import SectionHeading from "./SectionHeading"
 import SectionWrapper from "./SectionWrapper"
 import BodyText from "./BodyText"
 import Italic from "./Italic"
 import ExternalLink from "./ExternalLink"
+import pdf from "../assets/files/2019-DIY-as-Privilege.pdf"
 
 const H4 = props => (
   <Heading
@@ -66,10 +67,7 @@ const About = () => {
       <br />
       <BodyText>
         The Manifesto is available to{" "}
-        <ExternalLink href="https://www.dropbox.com/s/e4eisnar6bndmbd/2019-DIY-as-Privilege.pdf?dl=0">
-          download as a PDF
-        </ExternalLink>{" "}
-        and{" "}
+        <ExternalLink href={pdf}>download as a PDF</ExternalLink> and{" "}
         <ExternalLink href="https://richardjphoenix.bigcartel.com/product/diy-as-privilege">
           buy as a risograph print
         </ExternalLink>

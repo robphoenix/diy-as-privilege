@@ -71,17 +71,20 @@ const Why = () => {
         playing for years, all of them helped change mine and other people’s
         worlds, even in some small way. I hope this list will only get longer
         and longer!
-        <br />
-        <br />
-        <RightAlign>
-          &mdash;{" "}
-          <ExternalLink href="https://www.richardphoenix.com">
-            Richard Phoenix
-          </ExternalLink>
-        </RightAlign>
-        <br />
-        <br />
       </BodyText>
+      <br />
+      <br />
+      <RightAlign>
+        &mdash;{" "}
+        <ExternalLink
+          href="https://www.richardphoenix.com"
+          fontSize={[1, 2, 3]}
+        >
+          Richard Phoenix
+        </ExternalLink>
+      </RightAlign>
+      <br />
+      <br />
     </SectionWrapper>
   )
 }
