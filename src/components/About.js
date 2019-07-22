@@ -4,6 +4,8 @@ import { Text, Heading, Box } from "rebass"
 import SectionHeading from "./SectionHeading"
 import SectionWrapper from "./SectionWrapper"
 import BodyText from "./BodyText"
+import Italic from "./Italic"
+import ExternalLink from "./ExternalLink"
 
 const H4 = props => (
   <Heading
@@ -14,10 +16,6 @@ const H4 = props => (
     pt={4}
     mb={[2, 3]}
   />
-)
-
-const Italic = props => (
-  <Text {...props} as="span" css={{ fontStyle: "italic" }} />
 )
 
 const About = () => {
@@ -58,18 +56,24 @@ const About = () => {
           </BodyText>
         </Box>
       </Box>
-
       <BodyText>
         This is the second version of the manifesto, it uses the words{" "}
         <Italic>‘Disabled people’</Italic> rather than{" "}
         <Italic>‘People with Disabilities’</Italic>. This is so the language in
         the text better reflects the social model of disability.
       </BodyText>
-    
-    <BodyText>
-       <b>Download PDF [link: https://www.dropbox.com/s/e4eisnar6bndmbd/2019-DIY-as-Privilege.pdf?dl=0]
-       Buy a copy [link: https://richardjphoenix.bigcartel.com/product/diy-as-privilege]</b>
-
+      <br />
+      <br />
+      <BodyText>
+        The Manifesto is available to{" "}
+        <ExternalLink href="https://www.dropbox.com/s/e4eisnar6bndmbd/2019-DIY-as-Privilege.pdf?dl=0">
+          download as a PDF
+        </ExternalLink>{" "}
+        and{" "}
+        <ExternalLink href="https://richardjphoenix.bigcartel.com/product/diy-as-privilege">
+          buy as a risograph print
+        </ExternalLink>
+        .
       </BodyText>
     </SectionWrapper>
   )
