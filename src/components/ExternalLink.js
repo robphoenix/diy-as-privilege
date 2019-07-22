@@ -21,6 +21,6 @@ const StyledLink = styled(Link)(props => ({
   },
 }))
 
-const ExternalLink = props => <StyledLink {...props} px={1} />
+const ExternalLink = props => <StyledLink {...props} />
 
 export default ExternalLink

@@ -4,6 +4,8 @@ import { Box, Text } from "rebass"
 import Point from "./Point"
 import SectionHeading from "./SectionHeading"
 import SectionWrapper from "./SectionWrapper"
+import Italic from "./Italic"
+import RightAlign from "./RightAlign"
 
 const Number = props => <Text {...props} fontFamily="header" mb={2} pb={1} />
 const Quote = props => (
@@ -16,10 +18,6 @@ const Quote = props => (
     }}
   />
 )
-const Italic = props => (
-  <Text {...props} as="span" css={{ fontStyle: "italic" }} />
-)
-const RightAlign = props => <Text {...props} as="p" textAlign="right" />
 
 const Manifesto = () => {
   return (
@@ -84,9 +82,9 @@ const Manifesto = () => {
         <Point>
           <Number>8.</Number>
           <Text as="p">
-            Disabled people performing at or attending gigs shouldn't
-            be exceptional; the more it happens the more{" "}
-            <Italic>‘normal’</Italic> it becomes. Make it the norm.
+            Disabled people performing at or attending gigs shouldn't be
+            exceptional; the more it happens the more <Italic>‘normal’</Italic>{" "}
+            it becomes. Make it the norm.
           </Text>
         </Point>
         <Point>
@@ -122,8 +120,8 @@ const Manifesto = () => {
         <Point>
           <Number>13.</Number>
           <Text as="p">
-            Disabled people have senses of humour, laugh with people
-            and enjoy yourself.
+            Disabled people have senses of humour, laugh with people and enjoy
+            yourself.
           </Text>
         </Point>
       </Box>
