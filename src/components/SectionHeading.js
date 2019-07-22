@@ -1,19 +1,25 @@
 import React from "react"
-import { Heading } from "rebass"
+import { Heading, Flex } from "rebass"
 
 const SectionHeading = ({ id, children }) => {
   return (
-    <Heading
-      id={id}
-      as="h3"
-      fontFamily="header"
-      fontSize={[2, 3, 4]}
-      pt={4}
-      mb={[4, 5]}
-      textAlign="center"
-    >
-      {children}
-    </Heading>
+    <Flex justifyContent="center">
+      <Heading
+        id={id}
+        as="h3"
+        fontFamily="header"
+        fontSize={[2, 3, 4]}
+        p={2}
+        mb={[4, 5]}
+        textAlign="center"
+        css={{
+          borderBottom: "3px solid",
+          display: "inline-block",
+        }}
+      >
+        {children}
+      </Heading>
+    </Flex>
   )
 }
 
