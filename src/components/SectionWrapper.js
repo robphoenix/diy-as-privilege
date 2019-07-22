@@ -5,7 +5,7 @@ import { zIndex } from "styled-system"
 
 const OnTop = styled(Box)(zIndex)
 
-const SectionWrapper = ({ children }) => {
+const SectionWrapper = props => {
   return (
     <OnTop
       as="section"
@@ -13,8 +13,9 @@ const SectionWrapper = ({ children }) => {
       width={["none", 2 / 3, 1 / 2]}
       mb={[4, 5, 6]}
       zIndex={5}
+      {...props}
     >
-      {children}
+      {props.children}
     </OnTop>
   )
 }

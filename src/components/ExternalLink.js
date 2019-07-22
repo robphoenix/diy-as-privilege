@@ -10,15 +10,15 @@ const StyledLink = styled(Link)(props => ({
   )}, ${themeGet("colors.text")(props)})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center bottom",
-  backgroundSize: "100% 10%",
+  backgroundSize: `${props.href ? "100% 10%" : 0}`,
   transition: "all 0.2s ease-in-out",
-  cursor: "pointer",
+  cursor: props.href ? "pointer" : "default",
   color: themeGet("colors.text")(props),
   fontFamily: themeGet("fonts.body")(props),
   lineHeight: "1.5rem",
   ":hover": {
-    color: themeGet("colors.background")(props),
-    backgroundSize: "100% 100%",
+    color: props.href && themeGet("colors.background")(props),
+    backgroundSize: `${props.href ? "100% 100%" : 0}`,
   },
 }))
 
