@@ -6,6 +6,7 @@ import SectionWrapper from "./SectionWrapper"
 import BodyText from "./BodyText"
 import Italic from "./Italic"
 import ExternalLink from "./ExternalLink"
+// @ts-ignore
 import pdf from "../assets/files/2019-DIY-as-Privilege.pdf"
 
 const H4 = props => (

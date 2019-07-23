@@ -12,11 +12,13 @@ import Why from "../components/Why"
 import MobileNav from "../components/MobileNav"
 import Navigation from "../components/Navigation"
 import Artists from "../components/Artists"
+import SEO from "../components/seo"
 
 export default () => {
   return (
     <ThemeProvider theme={theme}>
       <React.Fragment>
+        <SEO />
         <GlobalStyle />
         <Navigation />
         <Flex
