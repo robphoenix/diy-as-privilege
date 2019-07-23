@@ -7,7 +7,7 @@ const Point = props => {
     <Text
       as="li"
       fontFamily="body"
-      fontSize={[2, 3, 4]}
+      fontSize={[3, 3, 4]}
       px={2}
       mb={last ? 0 : 5}
     >
