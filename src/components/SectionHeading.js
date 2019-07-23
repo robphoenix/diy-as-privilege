@@ -8,10 +8,10 @@ const SectionHeading = ({ id, children }) => {
         id={id}
         as="h3"
         fontFamily="header"
-        fontSize={[2, 3, 4]}
-        p={2}
+        fontSize={[3, 3, 4]}
         mb={[4, 5]}
         textAlign="center"
+        lineHeight="1.5"
         css={{
           borderBottom: "3px solid",
           display: "inline-block",
