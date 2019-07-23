@@ -11,7 +11,7 @@ const SectionWrapper = props => {
       as="section"
       px={4}
       width={["none", 2 / 3, 1 / 2]}
-      mb={[4, 5, 6]}
+      mb={[5, 6, 7]}
       zIndex={5}
       {...props}
     >

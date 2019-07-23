@@ -117,7 +117,7 @@ const Manifesto = () => {
             be.
           </Text>
         </Point>
-        <Point>
+        <Point last>
           <Number>13.</Number>
           <Text as="p">
             Disabled people have senses of humour, laugh with people and enjoy
