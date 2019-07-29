@@ -14,6 +14,7 @@ import Navigation from "../components/Navigation"
 import Artists from "../components/Artists"
 import SEO from "../components/seo"
 import Publication from "../components/Publication"
+import BuiltBy from "../components/BuiltBy"
 
 export default () => {
   return (
@@ -39,6 +40,7 @@ export default () => {
           <Why />
           <Artists />
           <Publication />
+          <BuiltBy />
         </Flex>
 
         <MobileNav />
