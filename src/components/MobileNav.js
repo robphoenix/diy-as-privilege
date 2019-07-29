@@ -62,15 +62,17 @@ const MobileNav = () => {
         }}
       >
         <LinkWrapper>
-          <MobileLink onClick={() => navigate("#")}>Home</MobileLink>
-        </LinkWrapper>
-        <LinkWrapper>
           <MobileLink onClick={() => navigate("#manifesto")}>
             Manifesto
           </MobileLink>
         </LinkWrapper>
         <LinkWrapper>
           <MobileLink onClick={() => navigate("#about")}>About</MobileLink>
+        </LinkWrapper>
+        <LinkWrapper>
+          <MobileLink onClick={() => navigate("#publication")}>
+            Publication
+          </MobileLink>
         </LinkWrapper>
       </Flex>
     </Nav>
