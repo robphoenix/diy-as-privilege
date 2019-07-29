@@ -29,8 +29,15 @@ export const publicationQuery = graphql`
   }
 `
 
+const getImages = () => {
+  const { v02image01, v02image02, v01image01, v01image02 } = useStaticQuery(
+    publicationQuery
+  )
+  return { v02image01, v02image02, v01image01, v01image02 }
+}
+
 const V02Image01 = () => {
-  const { v02image01 } = useStaticQuery(publicationQuery)
+  const { v02image01 } = getImages()
   return (
     <Img
       fluid={v02image01.childImageSharp.fluid}
@@ -39,7 +46,7 @@ const V02Image01 = () => {
   )
 }
 const V02Image02 = () => {
-  const { v02image02 } = useStaticQuery(publicationQuery)
+  const { v02image02 } = getImages()
   return (
     <Img
       fluid={v02image02.childImageSharp.fluid}
@@ -48,7 +55,7 @@ const V02Image02 = () => {
   )
 }
 const V01Image01 = () => {
-  const { v01image01 } = useStaticQuery(publicationQuery)
+  const { v01image01 } = getImages()
   return (
     <Img
       fluid={v01image01.childImageSharp.fluid}
@@ -57,7 +64,7 @@ const V01Image01 = () => {
   )
 }
 const V01Image02 = () => {
-  const { v01image02 } = useStaticQuery(publicationQuery)
+  const { v01image02 } = getImages()
   return (
     <Img
       fluid={v01image02.childImageSharp.fluid}
