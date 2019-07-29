@@ -6,6 +6,12 @@ import BodyText from "./BodyText"
 import pdf from "../assets/files/2019-DIY-as-Privilege.pdf"
 import ExternalLink from "./ExternalLink"
 import { H4 } from "./Headings"
+import {
+  V02Image01,
+  V02Image02,
+  V01Image01,
+  V01Image02,
+} from "./PublicationImages"
 
 const Publication = () => {
   return (
@@ -49,9 +55,19 @@ const Publication = () => {
         <ExternalLink href={pdf}> Download the PDF</ExternalLink>
         <br />
         <br />
+        <V02Image01 />
+        <br />
+        <V02Image02 />
+        <br />
+        <br />
         <H4>1st version</H4>
         100 copies riso-graph printed with purple ink on grey 120gsm matt paper.
         200 copies with various print colours and card colours.
+        <br />
+        <br />
+        <V01Image01 />
+        <br />
+        <V01Image02 />
       </BodyText>
     </SectionWrapper>
   )
