@@ -1,5 +1,5 @@
 import React from "react"
-import { Heading, Box } from "rebass"
+import { Box } from "rebass"
 
 import SectionHeading from "./SectionHeading"
 import SectionWrapper from "./SectionWrapper"
@@ -8,17 +8,7 @@ import Italic from "./Italic"
 import ExternalLink from "./ExternalLink"
 // @ts-ignore
 import pdf from "../assets/files/2019-DIY-as-Privilege.pdf"
-
-const H4 = props => (
-  <Heading
-    {...props}
-    as="h4"
-    fontFamily="header"
-    fontSize={[1, 2, 3]}
-    pt={4}
-    mb={[2, 3]}
-  />
-)
+import { H4 } from "./Headings"
 
 const About = () => {
   return (
