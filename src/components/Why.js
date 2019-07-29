@@ -38,10 +38,11 @@ const Why = () => {
           DIY Space For London
         </ExternalLink>{" "}
         to be the first volunteer run venue in the UK to achieve Bronze
-        accreditation for access from {" "}
+        accreditation for access from{" "}
         <ExternalLink href="http://www.attitudeiseverything.org.uk/">
           Attitude Is Everything
-        </ExternalLink>{" "}; and working for organisations such as{" "}
+        </ExternalLink>
+        ; and working for organisations such as{" "}
         <ExternalLink href="https://www.heartnsoul.co.uk/">
           Heart n Soul
         </ExternalLink>
