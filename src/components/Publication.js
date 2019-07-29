@@ -12,37 +12,35 @@ import {
   V01Image01,
   V01Image02,
 } from "./PublicationImages"
+import Italic from "./Italic"
 
 const Publication = () => {
   return (
     <SectionWrapper>
       <SectionHeading id="publication">Publication</SectionHeading>
-      <BodyText>
+      <BodyText mb={4}>
         The Manifesto was originally published as a pamphlet by The Fringe and
         Underground Music Group at Goldsmiths as part of the ‘Spaces of Making’
-        project.
+        project. It was launched on Friday 11th May at an event at Lewisham Art
+        House, with readings from myself, Charles Hayward, Marlo Delara & Sharon
+        Gal.
         <br />
-        It was launched on Friday 11th May at an event at Lewisham Art House,
-        with readings from myself, Charles Hayward, Marlo Delara & Sharon Gal.
         <br />
         Since then it has been published in the August 2018 issue of Maximum
-        Rock n Roll magazine and Tate’s 2019 Playground Magazine.
-        <br />
-        Available in the Goldsmiths University Library Archive, Good Press
-        Gallery in Glasgow, the Science and Media Museum in Bradford and Liz
-        Harris/Grouper in the US.
-        <br />
-        Translated into Greek by Zina Sarris for the Sounds Good Project with
-        pending translations into French and Spanish.
-        <br />
-        Please get in contact (my email - richardjamesphoenix@gmail.com) if
-        you're interested in stocking or distributing the manifesto or
-        translation it into another language.
+        Rock n Roll magazine and Tate’s 2019 Playground Magazine; made available
+        in the Goldsmiths University Library Archive, Good Press Gallery in
+        Glasgow, the Science and Media Museum in Bradford and Liz Harris/Grouper
+        in the US; and translated into Greek by Zina Sarris for the Sounds Good
+        Project with pending translations into French and Spanish.
         <br />
         <br />
-        <H4>2nd version</H4>
-        <br />
-        <br />
+        Please get in contact (my email is{" "}
+        <Italic>richardjamesphoenix@gmail.com</Italic>) if you're interested in
+        stocking or distributing the manifesto or translation it into another
+        language.
+      </BodyText>
+      <H4>2nd version</H4>
+      <BodyText mb={4}>
         200 copies riso-graph printed with teal ink on grey 180gsm matt paper
         Re-design in collaboration with Sean Roy Parker.
         <br />
@@ -58,9 +56,9 @@ const Publication = () => {
         <V02Image01 />
         <br />
         <V02Image02 />
-        <br />
-        <br />
-        <H4>1st version</H4>
+      </BodyText>
+      <H4>1st version</H4>
+      <BodyText mb={4}>
         100 copies riso-graph printed with purple ink on grey 120gsm matt paper.
         200 copies with various print colours and card colours.
         <br />
