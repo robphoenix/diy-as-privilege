@@ -1,7 +1,7 @@
 import React from "react"
 import { Flex, Box } from "rebass"
-  import styled from "styled-components"
-  import { themeGet } from "@styled-system/theme-get"
+import styled from "styled-components"
+import { themeGet } from "@styled-system/theme-get"
 import { display, width, zIndex, position, top, right } from "styled-system"
 import { navigate } from "@reach/router"
 
@@ -11,21 +11,21 @@ const Nav = styled(Flex)(display, width, zIndex, position, top, right)
 
 const LinkWrapper = props => <Box {...props} as="li" />
 
-  const DesktopLink = styled(PageLink)(props => ({
-    backgroundImage: `linear-gradient(180deg, ${themeGet("colors.text")(
-      props
-    )}, ${themeGet("colors.text")(props)})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center bottom",
-    backgroundSize: "70% 8%",
-    transition: "all 0.2s ease-in-out",
-    borderRadius: 0,
-    cursor: "pointer",
-    ":hover": {
-      color: themeGet("colors.background")(props),
-      backgroundSize: "100% 100%",
-    },
-  }))
+const DesktopLink = styled(PageLink)(props => ({
+  backgroundImage: `linear-gradient(180deg, ${themeGet("colors.text")(
+    props
+  )}, ${themeGet("colors.text")(props)})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center bottom",
+  backgroundSize: "70% 8%",
+  transition: "all 0.2s ease-in-out",
+  borderRadius: 0,
+  cursor: "pointer",
+  ":hover": {
+    color: themeGet("colors.background")(props),
+    backgroundSize: "100% 100%",
+  },
+}))
 
 const mediaQuery = `@media (min-width: 1025px)`
 
@@ -53,15 +53,17 @@ const Navigation = () => {
         }}
       >
         <LinkWrapper>
-          <DesktopLink onClick={() => navigate(`#`)}>Home</DesktopLink>
-        </LinkWrapper>
-        <LinkWrapper>
           <DesktopLink onClick={() => navigate(`#manifesto`)} mx={2}>
             Manifesto
           </DesktopLink>
         </LinkWrapper>
         <LinkWrapper>
           <DesktopLink onClick={() => navigate(`#about`)}>About</DesktopLink>
+        </LinkWrapper>
+        <LinkWrapper>
+          <DesktopLink onClick={() => navigate(`#publication`)}>
+            Publication
+          </DesktopLink>
         </LinkWrapper>
       </Flex>
     </Nav>

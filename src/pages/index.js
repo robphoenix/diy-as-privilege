@@ -13,6 +13,7 @@ import MobileNav from "../components/MobileNav"
 import Navigation from "../components/Navigation"
 import Artists from "../components/Artists"
 import SEO from "../components/seo"
+import Publication from "../components/Publication"
 
 export default () => {
   return (
@@ -37,6 +38,7 @@ export default () => {
           <About />
           <Why />
           <Artists />
+          <Publication />
         </Flex>
 
         <MobileNav />
