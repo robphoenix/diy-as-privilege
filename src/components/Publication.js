@@ -19,19 +19,28 @@ const Publication = () => {
     <SectionWrapper>
       <SectionHeading id="publication">Publication</SectionHeading>
       <BodyText mb={4}>
-        The Manifesto was originally published as a pamphlet by The Fringe and
-        Underground Music Group at Goldsmiths as part of the ‘Spaces of Making’
+        The Manifesto was originally published as a pamphlet by 
+        <ExternalLink href="https://richardjphoenix.bigcartel.com/product/diy-as-privilege">The Fringe and
+        Underground Music Group</ExternalLink> 
+        at Goldsmiths University as part of the ‘Spaces of Making’
         project. It was launched on Friday 11th May at an event at Lewisham Art
         House, with readings from myself, Charles Hayward, Marlo Delara & Sharon
         Gal.
         <br />
         <br />
         Since then it has been published in the August 2018 issue of Maximum
-        Rock n Roll magazine and Tate’s 2019 Playground Magazine; made available
+        Rocknroll magazine and Tate’s 2019 Playground Magazine; made available
         in the Goldsmiths University Library Archive, Good Press Gallery in
         Glasgow, the Science and Media Museum in Bradford and Liz Harris/Grouper
-        in the US; and translated into Greek by Zina Sarris for the Sounds Good
-        Project with pending translations into French and Spanish.
+        in the US.
+        <br />
+        <br />
+        Available translations:
+    
+        Greek  
+        <ExternalLink href="https://www.dropbox.com/s/vpbmqj4oehfv7y3/DIY%20as%20Privilege%20-%20Greek.pdf?dl=0"download PDF - 
+        Translated by Zina Sarris for the <ExternalLink href="https://www.soundsgoodproject.net/el"Sounds Good Project
+        </ExternalLink>
         <br />
         <br />
         Please get in contact (my email is{" "}
@@ -41,8 +50,11 @@ const Publication = () => {
       </BodyText>
       <H4>2nd version</H4>
       <BodyText mb={4}>
-        200 copies riso-graph printed with teal ink on grey 180gsm matt paper
-        Re-design in collaboration with Sean Roy Parker.
+        200 copies riso-graph printed with teal ink on grey 180gsm matt paper.
+       <br />
+        Re-design in collaboration with 
+        <ExternalLink href="http://seanroyparker.com/">Sean Roy Parker
+        </ExternalLink>.
         <br />
         <br />
         <ExternalLink href="https://richardjphoenix.bigcartel.com/product/diy-as-privilege">
@@ -59,8 +71,9 @@ const Publication = () => {
       </BodyText>
       <H4>1st version</H4>
       <BodyText mb={4}>
-        100 copies riso-graph printed with purple ink on grey 120gsm matt paper.
-        200 copies with various print colours and card colours.
+        100 copies riso-graph printed with purple ink on grey 120gsm matt paper. <i>Sold Out</i>
+        <br />
+        200 copies with various print colours and card colours. <i>Sold Out</i>
         <br />
         <br />
         <V01Image01 />
