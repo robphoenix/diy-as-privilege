@@ -16,9 +16,14 @@ const StyledLink = styled(Link)(props => ({
   color: themeGet("colors.text")(props),
   fontFamily: themeGet("fonts.body")(props),
   lineHeight: "1.5rem",
-  ":hover": {
+  ":hover,:focus": {
     color: props.href && themeGet("colors.background")(props),
     backgroundSize: `${props.href ? "100% 100%" : 0}`,
+  },
+  ":visited": {
+    color: themeGet("colors.background")(props),
+    backgroundSize: "100% 100%",
+    backgroundColor: themeGet("colors.text")(props),
   },
 }))
 

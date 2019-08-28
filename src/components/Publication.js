@@ -35,7 +35,7 @@ const Publication = () => {
         <br />
         <br />
         <H4>Available translations</H4>
-        Greek (<ExternalLink href={greek}>Download the PDF</ExternalLink>)
+        Greek (<ExternalLink href={greek}>download the pdf</ExternalLink>)
         &mdash; Translated by Zina Sarris for the{" "}
         <ExternalLink href="https://www.soundsgoodproject.net/el">
           Sounds Good Project
@@ -43,12 +43,13 @@ const Publication = () => {
         .
         <br />
         <br />
-        Please get in contact if you're interested in stocking or distributing
-        the manifesto or translating it into another language, my email is{" "}
+        Please{" "}
         <ExternalLink href="mailto: richardjamesphoenix@gmail.com">
-          richardjamesphoenix@gmail.com
-        </ExternalLink>
-        .
+          get in contact
+        </ExternalLink>{" "}
+        if you're interested in stocking or distributing the manifesto or
+        translating it into another language, my email is
+        richardjamesphoenix@gmail.com
       </BodyText>
       <H4>2nd version</H4>
       <BodyText mb={4}>
@@ -66,7 +67,7 @@ const Publication = () => {
         </ExternalLink>
         <br />
         <br />
-        <ExternalLink href={pdf}> Download the PDF</ExternalLink>
+        <ExternalLink href={pdf}> download the pdf</ExternalLink>
         <br />
         <br />
         <V02Image01 />
