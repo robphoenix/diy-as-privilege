@@ -10,11 +10,11 @@ import About from "../components/About"
 import GlobalStyle from "../components/GlobalStyle"
 import Why from "../components/Why"
 import MobileNav from "../components/MobileNav"
-import Navigation from "../components/Navigation"
 import Artists from "../components/Artists"
 import SEO from "../components/seo"
 import Publication from "../components/Publication"
 import BuiltBy from "../components/BuiltBy"
+import TopBar from "../components/TopBar"
 
 export default () => {
   return (
@@ -22,7 +22,7 @@ export default () => {
       <React.Fragment>
         <SEO />
         <GlobalStyle />
-        <Navigation />
+        <TopBar />
         <Flex
           flexDirection="column"
           alignItems="center"

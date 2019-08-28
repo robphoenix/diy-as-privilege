@@ -2,12 +2,9 @@ import React from "react"
 import { Flex, Box } from "rebass"
 import styled from "styled-components"
 import { themeGet } from "@styled-system/theme-get"
-import { display, width, zIndex, position, top, right } from "styled-system"
 import { navigate } from "@reach/router"
 
 import PageLink from "./PageLink"
-
-const Nav = styled(Flex)(display, width, zIndex, position, top, right)
 
 const LinkWrapper = props => <Box {...props} as="li" />
 
@@ -27,25 +24,9 @@ const DesktopLink = styled(PageLink)(props => ({
   },
 }))
 
-const mediaQuery = `@media (min-width: 1025px)`
-
 const Navigation = () => {
   return (
-    <Nav
-      as="nav"
-      role="navigation"
-      display="none"
-      justifyContent="flex-end"
-      position="fixed"
-      top="0"
-      right="0"
-      zIndex="2"
-      width={1}
-      p={3}
-      css={{
-        [mediaQuery]: { display: `flex` },
-      }}
-    >
+    <Flex as="nav" role="navigation" justifyContent="flex-end">
       <Flex
         as="ul"
         css={{
@@ -66,7 +47,7 @@ const Navigation = () => {
           </DesktopLink>
         </LinkWrapper>
       </Flex>
-    </Nav>
+    </Flex>
   )
 }
 

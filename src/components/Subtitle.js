@@ -4,11 +4,13 @@ import { opacity } from "styled-system"
 import styled from "styled-components"
 
 import useOpacity from "../hooks/use-opacity"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 const Header = styled(Heading)(opacity)
 
-const Subtitle = () => {
+const Subtitle = props => {
   const { opacity } = useOpacity()
+  const { subtitle } = useSiteMetadata()
 
   return (
     <Header
@@ -21,8 +23,9 @@ const Subtitle = () => {
       css={{
         transition: "opacity .2s ease-in-out",
       }}
+      {...props}
     >
-      13 Point Manifesto for Musicians
+      {subtitle}
     </Header>
   )
 }

@@ -4,11 +4,13 @@ import { opacity } from "styled-system"
 import styled from "styled-components"
 
 import useOpacity from "../hooks/use-opacity"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 const Header = styled(Heading)(opacity)
 
-const Title = () => {
+const Title = props => {
   const { opacity } = useOpacity()
+  const { title } = useSiteMetadata()
 
   return (
     <Header
@@ -21,8 +23,9 @@ const Title = () => {
       css={{
         transition: "opacity .2s ease-in-out",
       }}
+      {...props}
     >
-      D.I.Y. as Privilege
+      {title}
     </Header>
   )
 }

@@ -3,6 +3,7 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `D.I.Y. as Privilege`,
+    subtitle: `13 Point Manifesto for Musicians`,
     author: `Richard Phoenix`,
     description: `I wrote a something about what I’ve learnt over the past 13 years being involved with supporting people with learning disabilities to make and share music. Called it DIY as Privilege - 13 Point Manifesto For Musicians`,
     keywords: [
