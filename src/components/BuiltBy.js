@@ -7,7 +7,7 @@ import ExternalLink from "./ExternalLink"
 const BuiltBy = () => {
   return (
     <Flex>
-      <BodyText>
+      <BodyText fontSize={1}>
         Site built by{" "}
         <ExternalLink href="https://blog.robphoenix.com/">
           Rob Phoenix
