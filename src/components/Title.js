@@ -1,25 +1,29 @@
 import React from "react"
 import { Heading } from "rebass"
+import { opacity } from "styled-system"
+import styled from "styled-components"
+
+import useOpacity from "../hooks/use-opacity"
+
+const Header = styled(Heading)(opacity)
 
 const Title = () => {
-  const pos = window.pageYOffset
-  console.log({ pos })
-
-  const ref = React.useRef(null)
-  // const pos2 = ref.getBoundingClientRect()
-  // console.log({ pos2 })
+  const { opacity } = useOpacity()
 
   return (
-    <Heading
-      ref={ref}
+    <Header
       as="h1"
       fontFamily="header"
       fontSize={[5, 8, 11]}
       marginBottom={[4, 5, 6]}
       textAlign="center"
+      opacity={[1, opacity]}
+      css={{
+        transition: "opacity .2s ease-in-out",
+      }}
     >
       D.I.Y. as Privilege
-    </Heading>
+    </Header>
   )
 }
 
