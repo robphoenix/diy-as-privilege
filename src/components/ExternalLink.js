@@ -10,7 +10,7 @@ const StyledLink = styled(Link)(props => ({
   )}, ${themeGet("colors.text")(props)})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center bottom",
-  backgroundSize: `${props.href ? "100% 10%" : 0}`,
+  backgroundSize: `${props.href ? "100% 6%" : 0}`,
   transition: "all 0.2s ease-in-out",
   cursor: props.href ? "pointer" : "default",
   color: themeGet("colors.text")(props),
