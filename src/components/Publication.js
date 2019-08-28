@@ -12,7 +12,6 @@ import {
   V01Image01,
   V01Image02,
 } from "./PublicationImages"
-import Italic from "./Italic"
 
 const Publication = () => {
   return (
