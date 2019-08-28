@@ -19,7 +19,7 @@ const Publication = () => {
       <SectionHeading id="publication">Publication</SectionHeading>
       <BodyText mb={4}>
         The Manifesto was originally published as a pamphlet by{" "}
-        <ExternalLink href="https://richardjphoenix.bigcartel.com/product/diy-as-privilege">
+        <ExternalLink href="https://www.gold.ac.uk/music/research/fringe-underground-music-group/">
           The Fringe and Underground Music Group
         </ExternalLink>{" "}
         at Goldsmiths University as part of the ‘Spaces of Making’ project. It
