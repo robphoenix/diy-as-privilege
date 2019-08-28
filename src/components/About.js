@@ -48,14 +48,12 @@ const About = () => {
           </BodyText>
         </Box>
       </Box>
-      <BodyText>
+      <BodyText mb={4}>
         This is the second version of the manifesto, it uses the words{" "}
         <Italic>‘Disabled people’</Italic> rather than{" "}
         <Italic>‘People with Disabilities’</Italic>. This is so the language in
         the text better reflects the social model of disability.
       </BodyText>
-      <br />
-      <br />
       <BodyText>
         The Manifesto is available to{" "}
         <ExternalLink href={pdf}>download as a PDF</ExternalLink> and{" "}

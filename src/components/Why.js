@@ -11,7 +11,7 @@ const Why = () => {
   return (
     <SectionWrapper>
       <SectionHeading id="why">Why I wrote the Manifesto</SectionHeading>
-      <BodyText>
+      <BodyText mb={4}>
         On the 4th December 2006 I saw the bands <Italic>Beat Express</Italic>{" "}
         and <Italic>Heavy Load</Italic> play in Brighton. It was the first time
         I had seen musicians with learning disabilities on stage performing and
@@ -21,8 +21,8 @@ const Why = () => {
         the opportunities I had as a musician weren’t available to everyone. So,
         since then I’ve done all I can to support all kinds of people to make
         all kinds of music, share this music and get others to watch and listen.
-        <br />
-        <br />
+      </BodyText>
+      <BodyText mb={4}>
         This includes supporting the creation of a music scene in Brighton
         around the long running{" "}
         <ExternalLink href="https://therockhousebrighton.blogspot.com/">
@@ -61,23 +61,21 @@ const Why = () => {
         as a music facilitator supporting people with learning disabilities to
         form bands, create music, record and perform; as well as organising
         countless other gigs, releases, events and projects.
-        <br />
-        <br />
+      </BodyText>
+      <BodyText mb={4}>
         I think everyone should have the chance to experience a little of what
         I’ve been lucky enough to experience since 2006. I will forever be
         grateful for everything I have learnt from being involved with all of
         this. I wrote the manifesto to try and encourage others to get involved
         and help make more and more things happen.
-        <br />
-        <br />
+      </BodyText>
+      <BodyText mb={4}>
         In 2006 I only knew two bands existed, now I can write the list below of
         bands and musicians. Some existed for just one night and some have been
         playing for years, all of them helped change mine and other people’s
         worlds, even in some small way. I hope this list will only get longer
         and longer!
       </BodyText>
-      <br />
-      <br />
       <RightAlign>
         &mdash;{" "}
         <ExternalLink
@@ -87,8 +85,6 @@ const Why = () => {
           Richard Phoenix
         </ExternalLink>
       </RightAlign>
-      <br />
-      <br />
     </SectionWrapper>
   )
 }
