@@ -6,9 +6,9 @@ import { display, width, zIndex, position, top, right } from "styled-system"
 import Navigation from "./Navigation"
 import Title from "./Title"
 import useOpacity from "../hooks/use-opacity"
+import theme from "../theme"
 
 const Container = styled(Flex)(display, width, zIndex, position, top, right)
-const mediaQuery = `@media (min-width: 1025px)`
 
 const TopBar = () => {
   const { opacity } = useOpacity(400)
@@ -25,10 +25,16 @@ const TopBar = () => {
       width={1}
       p={3}
       css={{
-        [mediaQuery]: { display: `flex` },
+        [theme.mediaQueries[3]]: { display: `flex` },
       }}
     >
-      <Title fontSize={[2, 3, 4]} marginBottom={0} opacity={opacity ? 0 : 1} />
+      <Title
+        fontSize={[2, 3, 4]}
+        marginBottom={0}
+        css={{
+          [theme.mediaQueries[3]]: { opacity: opacity ? 0 : 1 },
+        }}
+      />
       <Navigation />
     </Container>
   )

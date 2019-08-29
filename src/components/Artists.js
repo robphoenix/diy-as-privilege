@@ -1,5 +1,6 @@
 import React from "react"
-import { Flex } from "rebass"
+import { css } from "@styled-system/css"
+
 import SectionWrapper from "./SectionWrapper"
 import SectionHeading from "./SectionHeading"
 import BodyText from "./BodyText"
@@ -124,25 +125,19 @@ const artists = [
     href: "https://zombiecrash.bandcamp.com/album/hardcore-on-tour",
   },
 ]
-
-const Artist = props => <BodyText {...props} as="li" mb={2} />
-
 const Artists = () => {
   return (
     <SectionWrapper>
       <SectionHeading id="artists">Artists</SectionHeading>
-      <Flex
-        as="ul"
-        css={{ listStyle: "none" }}
-        flexDirection="column"
-        width="50%"
-      >
+      <ul css={{ listStyle: "none" }}>
         {artists.map(artist => (
-          <Artist key={artist.name}>
-            <ExternalLink href={artist.href}>{artist.name}</ExternalLink>
-          </Artist>
+          <li key={artist.name} css={css({ marginBottom: 2 })}>
+            <ExternalLink href={artist.href}>
+              <BodyText>{artist.name}</BodyText>
+            </ExternalLink>
+          </li>
         ))}
-      </Flex>
+      </ul>
     </SectionWrapper>
   )
 }

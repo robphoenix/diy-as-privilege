@@ -1,5 +1,10 @@
+const breakpoints = ["40em", "52em", "65em"]
+const mq = breakpoint => `@media (min-width: ${breakpoint})`
+const mediaQueries = [0, ...breakpoints.map(breakpoint => mq(breakpoint))]
+
 export default {
-  breakpoints: ["40em", "52em", "64em"],
+  breakpoints,
+  mediaQueries,
   fontSizes: [
     12,
     14,
