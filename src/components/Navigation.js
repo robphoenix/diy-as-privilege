@@ -6,7 +6,7 @@ import { navigate } from "@reach/router"
 
 import PageLink from "./PageLink"
 
-const LinkWrapper = props => <Box {...props} as="li" />
+const LinkWrapper = props => <Box as="li" mb={2} {...props} />
 
 const DesktopLink = styled(PageLink)(props => ({
   backgroundImage: `linear-gradient(180deg, ${themeGet("colors.text")(
@@ -14,8 +14,8 @@ const DesktopLink = styled(PageLink)(props => ({
   )}, ${themeGet("colors.text")(props)})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center bottom",
-  backgroundSize: "70% 8%",
-  transition: "all 0.2s ease-in-out",
+  backgroundSize: "100% 6%",
+  transition: "all 0.3s ease-in-out",
   borderRadius: 0,
   cursor: "pointer",
   ":hover": {
@@ -29,12 +29,14 @@ const Navigation = () => {
     <Flex as="nav" role="navigation" justifyContent="flex-end">
       <Flex
         as="ul"
+        flexDirection="column"
+        alignItems="flex-end"
         css={{
           listStyle: "none",
         }}
       >
         <LinkWrapper>
-          <DesktopLink onClick={() => navigate(`#manifesto`)} mx={2}>
+          <DesktopLink onClick={() => navigate(`#manifesto`)}>
             Manifesto
           </DesktopLink>
         </LinkWrapper>

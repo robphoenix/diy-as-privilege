@@ -7,7 +7,13 @@ const ButtonLink = styled(Button)(fontFamily)
 
 const PageLink = props => {
   return (
-    <ButtonLink bg="background" color="text" fontFamily="header" {...props} />
+    <ButtonLink
+      bg="background"
+      color="text"
+      fontFamily="header"
+      px={1}
+      {...props}
+    />
   )
 }
 

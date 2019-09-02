@@ -30,7 +30,12 @@ export default () => {
           mt={[5, 6]}
           mb={[6, 5, 2]}
         >
-          <Flex flexDirection="column" alignItems="center" mb={[6, 7]}>
+          <Flex
+            flexDirection="column"
+            alignItems="center"
+            mb={[7, 6]}
+            css={{ zIndex: 9, background: "transparent" }}
+          >
             <Title />
             <Subtitle />
           </Flex>
