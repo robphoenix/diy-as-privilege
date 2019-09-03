@@ -26,15 +26,17 @@ export default () => {
         <Flex
           flexDirection="column"
           alignItems="center"
-          p={[2, 3, 4]}
+          p={[3, 4, 5]}
           mt={[5, 6]}
           mb={[6, 5, 2]}
         >
           <Flex
             flexDirection="column"
             alignItems="center"
-            mb={[7, 6]}
-            css={{ zIndex: 9, background: "transparent" }}
+            mb={7}
+            css={{
+              background: "transparent",
+            }}
           >
             <Title />
             <Subtitle />

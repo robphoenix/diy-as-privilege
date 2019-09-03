@@ -18,6 +18,8 @@ const DesktopLink = styled(PageLink)(props => ({
   transition: "all 0.3s ease-in-out",
   borderRadius: 0,
   cursor: "pointer",
+  marginLeft: themeGet("space.2")(props),
+  marginRight: themeGet("space.2")(props),
   ":hover": {
     color: themeGet("colors.background")(props),
     backgroundSize: "100% 100%",
@@ -29,8 +31,6 @@ const Navigation = () => {
     <Flex as="nav" role="navigation" justifyContent="flex-end">
       <Flex
         as="ul"
-        flexDirection="column"
-        alignItems="flex-end"
         css={{
           listStyle: "none",
         }}

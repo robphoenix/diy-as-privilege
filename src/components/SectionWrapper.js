@@ -10,7 +10,7 @@ const SectionWrapper = props => {
     <OnTop
       as="section"
       px={4}
-      width={["none", 2 / 3, 1 / 2]}
+      width={[1, 2 / 3, 1 / 2]}
       mb={[5, 6, 6]}
       zIndex={5}
       {...props}

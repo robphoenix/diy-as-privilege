@@ -9,6 +9,7 @@ import {
   top,
   right,
   border,
+  opacity,
 } from "styled-system"
 
 import Navigation from "./Navigation"
@@ -21,7 +22,8 @@ const Container = styled(Flex)(
   position,
   top,
   right,
-  border
+  border,
+  opacity
 )
 
 const TopBar = () => {
@@ -34,10 +36,13 @@ const TopBar = () => {
       top="0"
       right="0"
       zIndex="2"
+      opacity=".85"
       width={1}
+      backgroundColor="background"
       p={3}
       css={{
         [theme.mediaQueries[3]]: { display: `flex` },
+        backdropFilter: "blur(12px)",
       }}
     >
       <Navigation />
