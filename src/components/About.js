@@ -16,7 +16,7 @@ const About = () => {
       <SectionHeading id="about">About</SectionHeading>
       <Box mb={[4, 5, 6]}>
         <Box mb={[1, 2, 3]}>
-          <H4>D.I.Y</H4>
+          <H4>D.I.Y.</H4>
           <BodyText>
             Stands for <Italic>“Do It Yourself”</Italic>. In music it promotes
             the idea that anyone is capable of becoming a musician and sharing
