@@ -1,7 +1,8 @@
+// @ts-nocheck
 import React from "react"
 import { css } from "@styled-system/css"
+import { Flex } from "rebass"
 
-import SectionWrapper from "./SectionWrapper"
 import SectionHeading from "./SectionHeading"
 import BodyText from "./BodyText"
 import ExternalLink from "./ExternalLink"
@@ -127,18 +128,37 @@ const artists = [
 ]
 const Artists = () => {
   return (
-    <SectionWrapper>
+    <section
+      css={css({
+        width: ["none", "60%", "60%"],
+        mb: [5, 6, 6],
+      })}
+    >
       <SectionHeading id="artists">Artists</SectionHeading>
-      <ul css={{ listStyle: "none" }}>
+
+      <Flex
+        as="ul"
+        css={css({
+          listStyle: "none",
+          flexDirection: "column",
+          flexWrap: ["none", "none", "wrap"],
+          height: ["auto", 8, 9],
+        })}
+      >
         {artists.map(artist => (
-          <li key={artist.name} css={css({ marginBottom: 2 })}>
-            <ExternalLink href={artist.href}>
-              <BodyText>{artist.name}</BodyText>
-            </ExternalLink>
+          <li
+            key={artist.name}
+            css={css({
+              mb: 2,
+            })}
+          >
+            <BodyText>
+              <ExternalLink href={artist.href}>{artist.name}</ExternalLink>
+            </BodyText>
           </li>
         ))}
-      </ul>
-    </SectionWrapper>
+      </Flex>
+    </section>
   )
 }
 

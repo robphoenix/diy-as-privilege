@@ -1,9 +1,10 @@
 import React from "react"
 import { Heading, Flex } from "rebass"
 
-const SectionHeading = ({ id, children }) => {
+const SectionHeading = props => {
+  const { id, children, ...rest } = props
   return (
-    <Flex justifyContent="center">
+    <Flex justifyContent="center" {...rest}>
       <Heading
         id={id}
         as="h3"

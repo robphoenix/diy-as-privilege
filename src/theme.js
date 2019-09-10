@@ -28,7 +28,8 @@ export default {
     background: `#faf7a9`,
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
-  heights: [0, 16, 24, 32, 64, 128, 256],
+  sizes: [0, 16, 24, 32, 64, 96, 128, 256, 512, 768, 1024],
+  heights: [0, 16, 24, 32, 64, 128, 256, 512, 768, 1024],
   fonts: {
     header:
       "'Coco Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif",
