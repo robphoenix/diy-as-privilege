@@ -14,7 +14,6 @@ import Artists from "../components/Artists"
 import SEO from "../components/seo"
 import Publication from "../components/Publication"
 import BuiltBy from "../components/BuiltBy"
-import TopBar from "../components/TopBar"
 
 export default () => {
   return (
@@ -22,7 +21,6 @@ export default () => {
       <React.Fragment>
         <SEO />
         <GlobalStyle />
-        <TopBar />
         <Flex
           flexDirection="column"
           alignItems="center"
