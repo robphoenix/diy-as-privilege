@@ -7,7 +7,7 @@ export default {
   mediaQueries,
   fontSizes: [
     12,
-    14,
+    16,
     18,
     20,
     24,

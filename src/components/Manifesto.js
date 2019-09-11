@@ -25,11 +25,12 @@ const Point = props => (
       alignItems: "baseline",
       counterIncrement: "point",
       fontFamily: "body",
-      fontSize: 4,
+      fontSize: [3, 3, 4],
       mb: props.last ? 0 : 5,
       ":before": {
         content: "counter(point) '. '",
         fontFamily: "header",
+        fontSize: [2, 2, 3],
         minWidth: 4,
       },
     })}

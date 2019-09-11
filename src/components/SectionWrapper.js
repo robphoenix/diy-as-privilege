@@ -6,7 +6,7 @@ const SectionWrapper = props => {
     <Box
       as="section"
       px={4}
-      width={["none", 2 / 3, 1 / 2]}
+      width={["100%", "75%", "50%"]}
       mb={[5, 6, 6]}
       {...props}
     >

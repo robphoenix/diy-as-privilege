@@ -9,7 +9,7 @@ const SectionHeading = props => {
         id={id}
         as="h3"
         fontFamily="header"
-        fontSize={3}
+        fontSize={[1, 2, 3]}
         fontWeight="normal"
         mb={4}
         lineHeight="1.5"
@@ -18,6 +18,7 @@ const SectionHeading = props => {
           display: "inline-block",
           textTransform: "uppercase",
           letterSpacing: "0.1em",
+          textAlign: "center",
         }}
       >
         {children}
