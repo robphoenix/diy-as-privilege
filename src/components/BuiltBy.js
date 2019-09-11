@@ -9,7 +9,7 @@ const BuiltBy = () => {
     <Flex>
       <BodyText fontSize={1}>
         Site built by{" "}
-        <ExternalLink href="https://blog.robphoenix.com/">
+        <ExternalLink href="https://www.robphoenix.com/">
           Rob Phoenix
         </ExternalLink>
       </BodyText>

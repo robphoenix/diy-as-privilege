@@ -45,6 +45,7 @@ const Manifesto = () => {
         as="ol"
         ml="0"
         pl="0"
+        pt="4"
         css={{
           listStyle: "none",
           counterReset: "point",

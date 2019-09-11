@@ -82,13 +82,13 @@ const Publication = () => {
       <BodyText mb={4}>
         100 copies riso-graph printed with purple ink on grey 120gsm matt paper.{" "}
         <em>
-          <b>Sold Out</b>
+          <strong>Sold Out</strong>
         </em>
       </BodyText>
       <BodyText mb={4}>
         200 copies with various print colours and card colours.{" "}
         <em>
-          <b>Sold Out</b>
+          <strong>Sold Out</strong>
         </em>
       </BodyText>
       <Box mb={3}>

@@ -7,7 +7,7 @@ const SectionWrapper = props => {
       as="section"
       px={4}
       width={["none", 2 / 3, 1 / 2]}
-      mb={[5, 6, 7]}
+      mb={[5, 6, 6]}
       {...props}
     >
       {props.children}

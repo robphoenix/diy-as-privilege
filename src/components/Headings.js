@@ -6,9 +6,13 @@ const H4 = props => (
     {...props}
     as="h4"
     fontFamily="header"
-    fontSize={[1, 2, 3]}
+    fontSize={[1, 2, 2]}
     pt={4}
     mb={[2, 3]}
+    letterSpacing="0.1em"
+    css={{
+      textTransform: "uppercase",
+    }}
   />
 )
 
