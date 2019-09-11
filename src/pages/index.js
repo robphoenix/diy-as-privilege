@@ -30,7 +30,8 @@ export default () => {
             flexDirection="column"
             alignItems="center"
             justifyContent="center"
-            height="100vh"
+            height={[6, 7, 8]}
+            my={6}
           >
             <Title />
             <Subtitle />

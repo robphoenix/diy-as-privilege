@@ -2,14 +2,15 @@ import React from "react"
 import { Heading, Flex } from "rebass"
 
 const SectionHeading = props => {
-  const { id, children, ...rest } = props
+  console.log({ props })
+
   return (
     <Flex justifyContent="center">
       <Heading
-        id={id}
+        id={props.id}
         as="h3"
         fontFamily="header"
-        fontSize={[1, 2, 3]}
+        fontSize={[2, 2, 3]}
         fontWeight="normal"
         mb={4}
         lineHeight="1.5"
@@ -19,9 +20,10 @@ const SectionHeading = props => {
           textTransform: "uppercase",
           letterSpacing: "0.1em",
           textAlign: "center",
+          whiteSpace: "nowrap",
         }}
       >
-        {children}
+        {props.children}
       </Heading>
     </Flex>
   )
