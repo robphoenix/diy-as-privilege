@@ -25,14 +25,13 @@ export default () => {
           flexDirection="column"
           alignItems="center"
           p={[2, 3, 4]}
-          mt={[5, 6]}
           mb={[6, 5, 2]}
         >
           <Flex
             flexDirection="column"
             alignItems="center"
-            mb={[7, 6]}
-            css={{ zIndex: 9, background: "transparent" }}
+            justifyContent="center"
+            height="100vh"
           >
             <Title />
             <Subtitle />
