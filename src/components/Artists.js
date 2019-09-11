@@ -1,8 +1,9 @@
+// @ts-nocheck
 import React from "react"
 import { css } from "@styled-system/css"
 
-import SectionWrapper from "./SectionWrapper"
 import SectionHeading from "./SectionHeading"
+import SectionWrapper from "./SectionWrapper"
 import BodyText from "./BodyText"
 import ExternalLink from "./ExternalLink"
 
@@ -127,14 +128,24 @@ const artists = [
 ]
 const Artists = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper width="auto">
       <SectionHeading id="artists">Artists</SectionHeading>
-      <ul css={{ listStyle: "none" }}>
+      <ul
+        css={css({
+          listStyle: "none",
+          columnCount: [2, 3, 4],
+        })}
+      >
         {artists.map(artist => (
-          <li key={artist.name} css={css({ marginBottom: 2 })}>
-            <ExternalLink href={artist.href}>
-              <BodyText>{artist.name}</BodyText>
-            </ExternalLink>
+          <li
+            key={artist.name}
+            css={css({
+              mb: 3,
+            })}
+          >
+            <BodyText>
+              <ExternalLink href={artist.href}>{artist.name}</ExternalLink>
+            </BodyText>
           </li>
         ))}
       </ul>
