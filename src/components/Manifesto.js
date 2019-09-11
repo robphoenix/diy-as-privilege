@@ -31,7 +31,7 @@ const Point = props => (
         content: "counter(point) '. '",
         fontFamily: "header",
         fontSize: [2, 2, 3],
-        minWidth: 4,
+        minWidth: [3, 3, 4],
       },
     })}
     {...props}
