@@ -9,7 +9,6 @@ import theme from "../theme"
 import About from "../components/About"
 import GlobalStyle from "../components/GlobalStyle"
 import Why from "../components/Why"
-import MobileNav from "../components/MobileNav"
 import Artists from "../components/Artists"
 import SEO from "../components/seo"
 import Publication from "../components/Publication"
@@ -18,7 +17,7 @@ import BuiltBy from "../components/BuiltBy"
 export default () => {
   return (
     <ThemeProvider theme={theme}>
-      <React.Fragment>
+      <>
         <SEO />
         <GlobalStyle />
         <Flex
@@ -44,9 +43,7 @@ export default () => {
           <Publication />
           <BuiltBy />
         </Flex>
-
-        <MobileNav />
-      </React.Fragment>
+      </>
     </ThemeProvider>
   )
 }
