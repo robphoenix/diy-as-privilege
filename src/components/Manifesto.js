@@ -30,7 +30,7 @@ const Point = props => (
       ":before": {
         content: "counter(point) '. '",
         fontFamily: "header",
-        mr: 4,
+        minWidth: 4,
       },
     })}
     {...props}
@@ -50,11 +50,19 @@ const Manifesto = () => {
           counterReset: "point",
         }}
       >
-        <Point>See the privilege in being able to Do It Yourself.</Point>
         <Point>
-          Disabilities can be visible and invisible. Physical barriers and lack
-          of understanding can exclude people, think about how you can help
-          remove barriers.
+          <p>See the privilege in being able to Do It Yourself.</p>
+        </Point>
+        <Point>
+          <p
+            css={css({
+              width: 9,
+            })}
+          >
+            Disabilities can be visible and invisible. Physical barriers and
+            lack of understanding can exclude people, think about how you can
+            help remove barriers.
+          </p>
         </Point>
         <Point>
           <Flex flexDirection="column">
