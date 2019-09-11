@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from "react"
 import { css } from "@styled-system/css"
-import { Flex } from "rebass"
 
 import SectionHeading from "./SectionHeading"
+import SectionWrapper from "./SectionWrapper"
 import BodyText from "./BodyText"
 import ExternalLink from "./ExternalLink"
 
@@ -128,28 +128,19 @@ const artists = [
 ]
 const Artists = () => {
   return (
-    <section
-      css={css({
-        width: ["none", "60%", "60%"],
-        mb: [5, 6, 6],
-      })}
-    >
+    <SectionWrapper width="auto">
       <SectionHeading id="artists">Artists</SectionHeading>
-
-      <Flex
-        as="ul"
+      <ul
         css={css({
           listStyle: "none",
-          flexDirection: "column",
-          flexWrap: ["none", "none", "wrap"],
-          height: ["auto", 8, 9],
+          columnCount: [2, 3, 4],
         })}
       >
         {artists.map(artist => (
           <li
             key={artist.name}
             css={css({
-              mb: 2,
+              mb: 3,
             })}
           >
             <BodyText>
@@ -157,8 +148,8 @@ const Artists = () => {
             </BodyText>
           </li>
         ))}
-      </Flex>
-    </section>
+      </ul>
+    </SectionWrapper>
   )
 }
 
