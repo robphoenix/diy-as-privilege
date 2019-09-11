@@ -14,10 +14,12 @@ const Subtitle = props => {
     <Header
       as="h2"
       fontFamily="header"
-      fontSize={[4, 6, 8]}
+      fontSize={[4, 6, 9]}
       marginBottom={[4, 5, 6]}
       textAlign="center"
-      css={{ background: "transparent" }}
+      css={{
+        background: "transparent",
+      }}
       {...props}
     >
       {subtitle}

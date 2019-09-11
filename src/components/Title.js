@@ -14,7 +14,7 @@ const Title = props => {
     <Header
       as="h1"
       fontFamily="header"
-      fontSize={[5, 8, 11]}
+      fontSize={[5, 8, 15]}
       marginBottom={[4, 5, 6]}
       textAlign="center"
       {...props}
