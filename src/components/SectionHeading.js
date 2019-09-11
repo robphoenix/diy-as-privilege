@@ -10,7 +10,7 @@ const SectionHeading = props => {
         as="h3"
         fontFamily="header"
         fontSize={3}
-        mb={4}
+        mb={5}
         lineHeight="1.5"
         css={{
           borderBottom: "3px solid",
