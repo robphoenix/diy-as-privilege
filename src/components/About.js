@@ -22,7 +22,7 @@ const About = () => {
         }}
       >
         <Wrapper>
-          <H4>d.i.y.</H4>
+          <H4>D.I.Y.</H4>
           <BodyText>
             Stands for <Italic>“Do It Yourself”</Italic>. In music it promotes
             the idea that anyone is capable of becoming a musician and sharing
