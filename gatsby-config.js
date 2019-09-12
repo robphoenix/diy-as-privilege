@@ -52,6 +52,10 @@ module.exports = {
       twitter: `richardjphoenix`,
       github: `robphoenix`,
     },
+    developer: {
+      name: `Rob Phoenix`,
+      siteUrl: `https://www.robphoenix.com`,
+    },
   },
   plugins: [
     {

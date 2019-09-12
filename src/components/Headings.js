@@ -1,14 +1,18 @@
-import React from "react"
-import { Heading } from "rebass"
+import React from 'react'
+import { Heading } from 'rebass/styled-components'
 
 const H4 = props => (
   <Heading
-    {...props}
     as="h4"
-    fontFamily="header"
-    fontSize={[1, 2, 3]}
-    pt={4}
-    mb={[2, 3]}
+    sx={{
+      fontFamily: 'header',
+      fontSize: [1, 2, 3],
+      pt: 4,
+      mb: [2, 3],
+      textTransform: 'capitalize',
+      fontWeight: 'normal',
+    }}
+    {...props}
   />
 )
 

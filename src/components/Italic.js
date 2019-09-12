@@ -1,8 +1,14 @@
-import React from "react"
-import { Text } from "rebass"
+import React from 'react'
+import { Text } from 'rebass/styled-components'
 
 const Italic = props => (
-  <Text {...props} as="span" css={{ fontStyle: "italic" }} />
+  <Text
+    as="span"
+    sx={{
+      fontStyle: 'italic',
+    }}
+    {...props}
+  />
 )
 
 export default Italic

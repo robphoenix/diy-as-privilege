@@ -1,128 +1,135 @@
-import React from "react"
-import { Box, Text } from "rebass"
+import React from 'react'
+import { Box, Text, Flex } from 'rebass/styled-components'
 
-import Point from "./Point"
-import SectionHeading from "./SectionHeading"
-import SectionWrapper from "./SectionWrapper"
-import Italic from "./Italic"
-import RightAlign from "./RightAlign"
+import SectionHeading from './SectionHeading'
+import SectionWrapper from './SectionWrapper'
+import RightAlign from './RightAlign'
 
-const Number = props => <Text {...props} fontFamily="header" mb={2} pb={1} />
 const Quote = props => (
   <Text
-    {...props}
     as="blockquote"
-    mb={3}
-    css={{
-      fontStyle: "italic",
+    sx={{
+      display: 'inline',
+      mb: 3,
+      fontStyle: 'italic',
     }}
+    {...props}
+  />
+)
+
+const Point = props => (
+  <Box
+    as="li"
+    sx={{
+      display: 'flex',
+      alignItems: 'baseline',
+      counterIncrement: 'point',
+      fontFamily: 'body',
+      fontSize: [3, 3, 4],
+      mb: props.last ? 0 : 5,
+      ':before': {
+        content: "counter(point) '. '",
+        fontFamily: 'header',
+        fontSize: [2, 2, 3],
+        minWidth: [3, 3, 4],
+      },
+    }}
+    {...props}
   />
 )
 
 const Manifesto = () => {
   return (
     <SectionWrapper>
+      <SectionHeading id="manifesto">the manifesto</SectionHeading>
       <Box
         as="ol"
-        css={{
-          listStyle: "none",
+        sx={{
+          ml: 0,
+          pl: 0,
+          pt: 4,
+          listStyle: 'none',
+          counterReset: 'point',
         }}
       >
-        <SectionHeading id="manifesto">The Manifesto</SectionHeading>
         <Point>
-          <Number>1.</Number>
-          <Text as="p">See the privilege in being able to Do It Yourself.</Text>
+          <p>See the privilege in being able to Do It Yourself.</p>
         </Point>
         <Point>
-          <Number>2.</Number>
-          <Text as="p">
+          <p>
             Disabilities can be visible and invisible. Physical barriers and
             lack of understanding can exclude people, think about how you can
             help remove barriers.
-          </Text>
+          </p>
         </Point>
         <Point>
-          <Number>3.</Number>
-          <Quote>
-            “Using privilege to dismantle privilege, one of the best ways to use
-            your voice is to amplify voices that aren't being heard”
-          </Quote>
-          <RightAlign>&mdash; Rebecca Solnit</RightAlign>
+          <Flex
+            sx={{
+              flexDirection: 'column',
+            }}
+          >
+            <Quote>
+              “Using privilege to dismantle privilege, one of the best ways to
+              use your voice is to amplify voices that aren't being heard”
+            </Quote>
+            <RightAlign>&mdash; Rebecca Solnit</RightAlign>
+          </Flex>
         </Point>
         <Point>
-          <Number>4.</Number>
-          <Text as="p">
-            Do It Yourself can mean different things to different people and is
-            a misleading term &mdash; it can mean you still work with people
-            that record your music, people that make and sell your records,
-            people that own the buildings you rehearse in, people that put on
-            gigs, just as much as music facilitators, support workers or
-            transport to and from a gig.
-          </Text>
+          Do It Yourself can mean different things to different people and is a
+          misleading term &mdash; it can mean you still work with people that
+          record your music, people that make and sell your records, people that
+          own the buildings you rehearse in, people that put on gigs, just as
+          much as music facilitators, support workers or transport to and from a
+          gig.
         </Point>
         <Point>
-          <Number>5.</Number>
-          <Text as="p">
-            Be a supportive tool, be patient, listen, give people control.
-          </Text>
+          Be a supportive tool, be patient, listen, give people control.
         </Point>
         <Point>
-          <Number>6.</Number>
-          <Quote>
-            “They're catching me on my weak points but not on my strong points.”
-          </Quote>
-          <RightAlign>&mdash; David M on Job Centre Plus</RightAlign>
-          <br />
-          <Text as="p">Catch people's strong points.</Text>
+          <Flex
+            sx={{
+              flexDirection: 'column',
+            }}
+          >
+            <Quote>
+              “They're catching me on my weak points but not on my strong
+              points.”
+            </Quote>
+            <RightAlign>&mdash; David M on Job Centre Plus</RightAlign>
+            <br />
+            Catch people's strong points.
+          </Flex>
         </Point>
+        <Point>Don't assume what's accessible; ask and learn.</Point>
         <Point>
-          <Number>7.</Number>
-          <Text as="p">Don't assume what's accessible; ask and learn.</Text>
-        </Point>
-        <Point>
-          <Number>8.</Number>
-          <Text as="p">
+          <p>
             Disabled people performing at or attending gigs shouldn't be
-            exceptional; the more it happens the more <Italic>‘normal’</Italic>{" "}
-            it becomes. Make it the norm.
-          </Text>
+            exceptional; the more it happens the more <em>‘normal’</em> it
+            becomes. Make it the norm.
+          </p>
         </Point>
         <Point>
-          <Number>9.</Number>
-          <Text as="p">
-            There is an audience for everything and ideas of what is
-            <Italic> ‘good music’ </Italic>will always be political.
-          </Text>
+          <p>
+            There is an audience for everything and ideas of what is{' '}
+            <em>‘good music’</em> will always be political.
+          </p>
         </Point>
         <Point>
-          <Number>10.</Number>
-          <Text as="p">
-            Everyone, regardless of ability, can contribute to a music scene.
-            Use existing support networks to get people on stage and in the
-            audience &mdash; disability arts charitites, organisations and
-            support.
-          </Text>
+          Everyone, regardless of ability, can contribute to a music scene. Use
+          existing support networks to get people on stage and in the audience
+          &mdash; disability arts charitites, organisations and support.
         </Point>
         <Point>
-          <Number>11.</Number>
-          <Text as="p">
-            Turn up and keep turning up. Sometimes when supporting people being
-            consistent is more impressive than being spectacular.
-          </Text>
+          Turn up and keep turning up. Sometimes when supporting people being
+          consistent is more impressive than being spectacular.
         </Point>
         <Point>
-          <Number>12.</Number>
-          <Text as="p">
-            The more invisible you make yourself, the more visible others will
-            be.
-          </Text>
+          The more invisible you make yourself, the more visible others will be.
         </Point>
         <Point last>
-          <Number>13.</Number>
-          <Text as="p">
-            Disabled people have senses of humour, laugh with people and enjoy
-            yourself.
-          </Text>
+          Disabled people have senses of humour, laugh with people and enjoy
+          yourself.
         </Point>
       </Box>
     </SectionWrapper>

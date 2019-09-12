@@ -1,13 +1,15 @@
 import React from "react"
-import { Text } from "rebass"
+import { Text } from "rebass/styled-components"
 
 const BodyText = props => {
   return (
     <Text
       as="p"
-      fontFamily="body"
-      fontSize={[2, 2, 3]}
-      lineHeight="1.5"
+      sx={{
+        fontFamily: "body",
+        fontSize: [2, 2, 3],
+        lineHeight: "copy",
+      }}
       {...props}
     >
       {props.children}

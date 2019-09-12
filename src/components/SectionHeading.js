@@ -1,23 +1,29 @@
-import React from "react"
-import { Heading, Flex } from "rebass"
+import React from 'react'
+import { Heading, Flex } from 'rebass/styled-components'
 
-const SectionHeading = ({ id, children }) => {
+const SectionHeading = props => {
   return (
-    <Flex justifyContent="center">
+    <Flex
+      sx={{
+        justifyContent: 'center',
+      }}
+    >
       <Heading
-        id={id}
+        id={props.id}
         as="h3"
-        fontFamily="header"
-        fontSize={[3, 3, 4]}
-        mb={[4, 5]}
-        textAlign="center"
-        lineHeight="1.5"
-        css={{
-          borderBottom: "3px solid",
-          display: "inline-block",
+        sx={{
+          fontFamily: 'header',
+          fontSize: [2, 3, 4],
+          fontWeight: 'normal',
+          mb: 4,
+          lineHeight: '1.5',
+          borderBottom: '3px solid',
+          display: 'inline-block',
+          textTransform: 'capitalize',
+          textAlign: 'center',
         }}
       >
-        {children}
+        {props.children}
       </Heading>
     </Flex>
   )
