@@ -4,7 +4,7 @@ import {
   CocoGothic_BoldItalic_woff,
   CocoGothic_BoldItalic_woff2,
 } from "../assets/fonts"
-import { colours } from "../tokens"
+import theme from "../theme"
 
 const GlobalStyle = createGlobalStyle`
         @font-face {
@@ -36,8 +36,8 @@ const GlobalStyle = createGlobalStyle`
           box-sizing: inherit;
           margin: 0;
           padding: 0;
-          background-color: ${colours.background};
-          color: ${colours.text};
+          background-color: ${theme.colors.background};
+          color: ${theme.colors.text};
         }
 `
 export default GlobalStyle

@@ -1,39 +1,39 @@
-import React from "react"
-import { Box, Text, Flex } from "rebass"
-import { css } from "@styled-system/css"
+import React from 'react'
+import { Box, Text, Flex } from 'rebass/styled-components'
 
-import SectionHeading from "./SectionHeading"
-import SectionWrapper from "./SectionWrapper"
-import RightAlign from "./RightAlign"
+import SectionHeading from './SectionHeading'
+import SectionWrapper from './SectionWrapper'
+import RightAlign from './RightAlign'
 
 const Quote = props => (
   <Text
-    {...props}
     as="blockquote"
-    display="inline"
-    mb={3}
-    css={{
-      fontStyle: "italic",
+    sx={{
+      display: 'inline',
+      mb: 3,
+      fontStyle: 'italic',
     }}
+    {...props}
   />
 )
 
 const Point = props => (
-  <li
-    css={css({
-      display: "flex",
-      alignItems: "baseline",
-      counterIncrement: "point",
-      fontFamily: "body",
+  <Box
+    as="li"
+    sx={{
+      display: 'flex',
+      alignItems: 'baseline',
+      counterIncrement: 'point',
+      fontFamily: 'body',
       fontSize: [3, 3, 4],
       mb: props.last ? 0 : 5,
-      ":before": {
+      ':before': {
         content: "counter(point) '. '",
-        fontFamily: "header",
+        fontFamily: 'header',
         fontSize: [2, 2, 3],
         minWidth: [3, 3, 4],
       },
-    })}
+    }}
     {...props}
   />
 )
@@ -41,33 +41,33 @@ const Point = props => (
 const Manifesto = () => {
   return (
     <SectionWrapper>
-      <SectionHeading id="manifesto">The Manifesto</SectionHeading>
+      <SectionHeading id="manifesto">the manifesto</SectionHeading>
       <Box
         as="ol"
-        ml="0"
-        pl="0"
-        pt="4"
-        css={{
-          listStyle: "none",
-          counterReset: "point",
+        sx={{
+          ml: 0,
+          pl: 0,
+          pt: 4,
+          listStyle: 'none',
+          counterReset: 'point',
         }}
       >
         <Point>
           <p>See the privilege in being able to Do It Yourself.</p>
         </Point>
         <Point>
-          <p
-            css={css({
-              width: 9,
-            })}
-          >
+          <p>
             Disabilities can be visible and invisible. Physical barriers and
             lack of understanding can exclude people, think about how you can
             help remove barriers.
           </p>
         </Point>
         <Point>
-          <Flex flexDirection="column">
+          <Flex
+            sx={{
+              flexDirection: 'column',
+            }}
+          >
             <Quote>
               “Using privilege to dismantle privilege, one of the best ways to
               use your voice is to amplify voices that aren't being heard”
@@ -87,7 +87,11 @@ const Manifesto = () => {
           Be a supportive tool, be patient, listen, give people control.
         </Point>
         <Point>
-          <Flex flexDirection="column">
+          <Flex
+            sx={{
+              flexDirection: 'column',
+            }}
+          >
             <Quote>
               “They're catching me on my weak points but not on my strong
               points.”
@@ -107,7 +111,7 @@ const Manifesto = () => {
         </Point>
         <Point>
           <p>
-            There is an audience for everything and ideas of what is{" "}
+            There is an audience for everything and ideas of what is{' '}
             <em>‘good music’</em> will always be political.
           </p>
         </Point>
