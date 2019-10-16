@@ -54,7 +54,7 @@ module.exports = {
     },
     developer: {
       name: `Rob Phoenix`,
-      siteUrl: `https://www.robphoenix.com`,
+      siteUrl: `https://github.com/robphoenix/diy-as-privilege`,
     },
   },
   plugins: [
@@ -72,7 +72,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-144728290-1",
+        trackingId: 'UA-144728290-1',
       },
     },
   ],

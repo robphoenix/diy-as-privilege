@@ -150,7 +150,11 @@ const Artists = () => {
             }}
           >
             <BodyText>
-              <ExternalLink href={artist.href}>{artist.name}</ExternalLink>
+              {artist.href ? (
+                <ExternalLink href={artist.href}>{artist.name}</ExternalLink>
+              ) : (
+                <BodyText>{artist.name}</BodyText>
+              )}
             </BodyText>
           </Box>
         ))}

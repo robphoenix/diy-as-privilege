@@ -24,8 +24,9 @@ export default {
     128,
   ],
   colors: {
-    text: `#2c238f`,
-    background: `#faf7a9`,
+    text: `hsl(245, 61%, 35%)`,
+    background: `hsl(58, 89%, 82%)`,
+    link: `hsl(245, 91%, 50%)`,
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   sizes: [0, 16, 24, 32, 64, 96, 128, 256, 512, 768, 1024],
