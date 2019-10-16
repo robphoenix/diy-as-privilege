@@ -6,12 +6,10 @@ import SectionHeading from './SectionHeading'
 import BodyText from './BodyText'
 import ExternalLink from './ExternalLink'
 import { H4 } from './Headings'
-import {
-  V02Image01,
-  V02Image02,
-  V01Image01,
-  V01Image02,
-} from './PublicationImages'
+import Image0201 from './Image0201'
+import Image0202 from './Image0202'
+import Image0101 from './Image0101'
+import Image0102 from './Image0102'
 // @ts-ignore
 import pdf from '../assets/files/2019-DIY-as-Privilege.pdf'
 // @ts-ignore
@@ -113,14 +111,14 @@ const Publication = () => {
           mb: 3,
         }}
       >
-        <V02Image01 />
+        <Image0201 />
       </Box>
       <Box
         sx={{
           mb: 4,
         }}
       >
-        <V02Image02 />
+        <Image0202 />
       </Box>
       <H4>1st version</H4>
       <Wrapper>
@@ -145,9 +143,9 @@ const Publication = () => {
           mb: 3,
         }}
       >
-        <V01Image01 />
+        <Image0101 />
       </Box>
-      <V01Image02 />
+      <Image0102 />
     </SectionWrapper>
   )
 }

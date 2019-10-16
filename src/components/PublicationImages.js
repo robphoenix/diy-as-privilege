@@ -1,6 +1,4 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 export const publicationImage = graphql`
   fragment publicationImage on File {
@@ -28,42 +26,3 @@ export const publicationQuery = graphql`
     }
   }
 `
-
-const V02Image01 = () => {
-  const { v02image01 } = useStaticQuery(publicationQuery)
-  return (
-    <Img
-      fluid={v02image01.childImageSharp.fluid}
-      title="2nd Version, Image 01"
-    />
-  )
-}
-const V02Image02 = () => {
-  const { v02image02 } = useStaticQuery(publicationQuery)
-  return (
-    <Img
-      fluid={v02image02.childImageSharp.fluid}
-      title="2nd Version, Image 02"
-    />
-  )
-}
-const V01Image01 = () => {
-  const { v01image01 } = useStaticQuery(publicationQuery)
-  return (
-    <Img
-      fluid={v01image01.childImageSharp.fluid}
-      title="1st Version, Image 01"
-    />
-  )
-}
-const V01Image02 = () => {
-  const { v01image02 } = useStaticQuery(publicationQuery)
-  return (
-    <Img
-      fluid={v01image02.childImageSharp.fluid}
-      title="1st Version, Image 02"
-    />
-  )
-}
-
-export { V02Image01, V02Image02, V01Image01, V01Image02 }
