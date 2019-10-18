@@ -23,9 +23,9 @@ const ExternalLink = props => {
           backgroundSize: '100% 100%',
         },
         ':visited': {
-          color: showVisited ? 'background' : 'text',
-          backgroundSize: '100% 100%',
-          backgroundColor: showVisited ? 'text' : 'background',
+          color: showVisited && 'background',
+          backgroundSize: showVisited && '100% 100%',
+          backgroundColor: showVisited && 'text',
         },
       }}
       {...props}
