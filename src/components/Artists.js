@@ -151,7 +151,9 @@ const Artists = () => {
           >
             <BodyText>
               {artist.href ? (
-                <ExternalLink href={artist.href}>{artist.name}</ExternalLink>
+                <ExternalLink href={artist.href} showVisited>
+                  {artist.name}
+                </ExternalLink>
               ) : (
                 <BodyText>{artist.name}</BodyText>
               )}

@@ -1,27 +1,36 @@
 import React from 'react'
 import { Link } from 'rebass/styled-components'
 
-const ExternalLink = props => (
-  <Link
-    sx={{
-      textDecoration: 'none',
-      cursor: 'pointer',
-      color: 'text',
-      fontFamily: 'body',
-      lineHeight: 'copy',
-      borderBottom: '1px solid',
-      borderColor: 'text',
-      ':visited': {
-        color: 'link',
-        borderColor: 'link',
-      },
-      ':hover,:focus': {
-        color: 'link',
-        borderColor: 'link',
-      },
-    }}
-    {...props}
-  />
-)
+const ExternalLink = props => {
+  const { showVisited } = props
+  return (
+    <Link
+      sx={{
+        textDecoration: 'none',
+        cursor: 'pointer',
+        color: 'text',
+        fontFamily: 'body',
+        lineHeight: 'copy',
+        // animated bottom border
+        backgroundImage: theme =>
+          `linear-gradient(${theme.colors.text}, ${theme.colors.text})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center bottom',
+        backgroundSize: '100% 5%',
+        transition: 'all 0.2s ease-in-out',
+        ':hover,:focus': {
+          color: 'background',
+          backgroundSize: '100% 100%',
+        },
+        ':visited': {
+          color: showVisited ? 'background' : 'text',
+          backgroundSize: '100% 100%',
+          backgroundColor: showVisited ? 'text' : 'background',
+        },
+      }}
+      {...props}
+    />
+  )
+}
 
 export default ExternalLink
