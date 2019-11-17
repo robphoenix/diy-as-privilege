@@ -118,7 +118,7 @@ const Manifesto = () => {
         <Point>
           Everyone, regardless of ability, can contribute to a music scene. Use
           existing support networks to get people on stage and in the audience
-          &mdash; disability arts charitites, organisations and support.
+          &mdash; disability arts charities, organisations and support.
         </Point>
         <Point>
           Turn up and keep turning up. Sometimes when supporting people being
