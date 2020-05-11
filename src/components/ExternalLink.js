@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'rebass/styled-components'
 
 const ExternalLink = props => {
-  const { showVisited } = props
+  const { showVisited, sx, ...rest } = props
+
   return (
     <Link
       sx={{
@@ -27,8 +28,9 @@ const ExternalLink = props => {
           backgroundSize: showVisited && '100% 100%',
           backgroundColor: showVisited && 'text',
         },
+        ...sx
       }}
-      {...props}
+      {...rest}
     />
   )
 }
