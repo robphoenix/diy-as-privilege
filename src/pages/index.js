@@ -14,7 +14,7 @@ import { useSiteMetadata } from '../hooks/use-site-metadata'
 import ExternalLink from '../components/ExternalLink'
 
 export default () => {
-  const { title, subtitle, developer } = useSiteMetadata()
+  const { title, developer } = useSiteMetadata()
 
   return (
     <ThemeProvider theme={theme}>
