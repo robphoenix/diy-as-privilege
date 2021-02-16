@@ -1,65 +1,76 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { css } from '@emotion/react'
+
+import { fonts, space } from '../tokens'
+import { Wrapper, Point } from '../components'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>D.I.Y. as Privilege</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+      <header
+        role="banner"
+        css={css`
+          padding: ${space.xl} 0;
+          margin-bottom: ${space['2xl']};
+        `}
+      >
+        <Wrapper>
+          <div
+            css={css`
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: ${space.lg};
+              gap: ${space.lg};
+              align-items: center;
+            `}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            <h1>D.I.Y. as Privilege</h1>
+            <nav>
+              <ul
+                role="list"
+                css={css`
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: flex-end;
+                `}
+              >
+                {['about', 'publication'].map((item) => (
+                  <li
+                    key={item}
+                    css={css`
+                      text-transform: capitalize;
+                      margin: 0 ${space.md};
+                    `}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        </Wrapper>
+      </header>
+      <main>
+        <Wrapper>
+          <h2>13 Point Manifesto for Musicians</h2>
+          <ol
+            css={css`
+              counter-reset: point;
+            `}
           >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+            <Point>See the privilege in being able to Do It Yourself.</Point>
+            <Point>
+              Disabilities can be visible and invisible. Physical barriers and
+              lack of understanding can exclude people, think about how you can
+              help remove barriers.
+            </Point>
+          </ol>
+        </Wrapper>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
