@@ -12,14 +12,114 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>D.I.Y. as Privilege</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="preload"
+          href="/fonts/cocogothic/cocogothic-bolditalic.woff2"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/cocogothic/cocogothic-bolditalic.woff"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/cocogothic/cocogothic-bolditalic.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-Regular.woff2"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-Regular.woff"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-Regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-Bold.woff2"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-Bold.woff"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-Bold.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-Italic.woff2"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-Italic.woff"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-Italic.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-BoldItalic.woff2"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-BoldItalic.woff"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/atkinsonhyperlegible/Atkinson-Hyperlegible-BoldItalic.ttf"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
       <header
         role="banner"
         css={css`
-          padding: ${tokens.space['2xl']} 0;
+          padding: ${tokens.space['2xl']};
         `}
       >
-        <Wrapper>
+        <div
+          css={css`
+            width: 80vw;
+            width: clamp(8rem, 80vw, 80rem);
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            position: relative;
+          `}
+        >
           <div
             css={css`
               display: flex;
@@ -64,7 +164,7 @@ function MyApp({ Component, pageProps }) {
                     key={item}
                     css={css`
                       text-transform: capitalize;
-                      margin: ${tokens.space.md};
+                      margin: ${tokens.space.sm};
                       ${tokens.mediaQueries.md} {
                         margin: ${tokens.space.md};
                       }
@@ -92,7 +192,7 @@ function MyApp({ Component, pageProps }) {
               </ul>
             </nav>
           </div>
-        </Wrapper>
+        </div>
       </header>
       <main>
         <Wrapper>

@@ -7,13 +7,14 @@ function Manifesto() {
     <>
       <h2
         css={css`
+          text-transform: capitalize;
           margin-bottom: ${tokens.space['2xl']};
           ${tokens.mediaQueries.sm} {
             text-align: center;
           }
         `}
       >
-        13 Point Manifesto for Musicians
+        13 point manifesto for musicians
       </h2>
 
       <section
@@ -29,6 +30,9 @@ function Manifesto() {
         <ol
           css={css`
             counter-reset: point;
+            display: grid;
+            grid-gap: ${tokens.space['2xl']};
+            gap: ${tokens.space['2xl']};
           `}
         >
           <Point>
@@ -141,7 +145,6 @@ const Point = (props) => (
       display: flex;
       align-items: baseline;
       font-size: ${tokens.fontSizes.sm};
-      margin-bottom: ${tokens.space['2xl']};
       :before {
         content: counter(point) '. ';
         font-family: ${tokens.fonts.heading};

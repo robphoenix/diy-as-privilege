@@ -59,7 +59,10 @@ h1 {
 
 h2 {
   font-size: var(--font-size-xl);
-  max-width: 30ch;
+}
+
+h3 {
+  font-size: var(--font-size-md);
 }
 
 p {
@@ -86,17 +89,24 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--fonts-heading);
   line-height: 1.25;
 }
 
 h1,
 h2,
+h3,
 p,
 blockquote {
   margin: 0;
   padding: 0;
+}
+
+h2,
+h3 {
+  max-width: 30ch;
 }
 
 @font-face {
