@@ -20,7 +20,20 @@ const fontSizes = {
   '2xl': 'var(--font-size-2xl)',
 }
 
-const tokens = { fonts, space, fontSizes }
+const colors = {
+  background: 'var(--colors-background)',
+  text: 'var(--colors-text)',
+}
 
-export { fonts, space, fontSizes }
+const breakpoints = { sm: '40em', md: '52em', lg: '65em' }
+const mq = (breakpoint) => `@media (min-width: ${breakpoint})`
+const mediaQueries = {
+  sm: mq(breakpoints.sm),
+  md: mq(breakpoints.md),
+  lg: mq(breakpoints.lg),
+}
+
+const tokens = { fonts, space, fontSizes, colors, mediaQueries }
+
+export { fonts, space, fontSizes, colors, mediaQueries }
 export default tokens
